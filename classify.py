@@ -14,24 +14,9 @@ import numpy as np, pandas as pd, json
 from sklearn.neighbors import KNeighborsClassifier
 
 
-# ## 1. Just checking to see if json loading works
+# ## 1. Function to make a dictionary with mean and std for each trace
 
 # In[2]:
-
-
-with open('activity-dataset-team2/activity-team2-Driving-0.txt', 'r') as f:
-    d2 = json.loads(f.read().replace('\'','\"'))
-
-
-# In[3]:
-
-
-d2['seq'][0]
-
-
-# ## 2. Function to make a dictionary with mean and std for each trace
-
-# In[4]:
 
 
 def makedic(arr):
@@ -61,13 +46,13 @@ def makedic(arr):
     
 
 
-# ## 3. Testing to see how well k-neighbors works
+# ## 2. Testing to see how well k-neighbors works
 
 # First, we gather classifications off of a subset of the already labeled datasets provided in /activitydataset. We then test the k-neighbors classifier for accuracy on the cross-validation set, the portion of the dataset not used for training.
 
 # ### Driving
 
-# In[5]:
+# In[3]:
 
 
 with open('activity-dataset-team2/activity-team2-Driving-0.txt', 'r') as f:
@@ -81,7 +66,7 @@ drdf
 
 # ### Jumping
 
-# In[6]:
+# In[4]:
 
 
 with open('activity-dataset-team2/activity-team2-Jumping-0.txt', 'r') as f:
@@ -95,7 +80,7 @@ jpdf
 
 # ### Standing
 
-# In[7]:
+# In[5]:
 
 
 with open('activity-dataset-team2/activity-team2-Standing-0.txt', 'r') as f:
@@ -109,7 +94,7 @@ stdf
 
 # ### Walking
 
-# In[8]:
+# In[6]:
 
 
 with open('activity-dataset-team2/activity-team2-Walking-0.txt', 'r') as f:
@@ -125,7 +110,7 @@ wkdf
 
 # #### Loading cumulative datasets
 
-# In[9]:
+# In[7]:
 
 
 with open('activitydataset/activity-dataset-Driving.txt', 'r') as f:
@@ -139,7 +124,7 @@ for x in range(20, len(dr)):
 drcumdf = pd.DataFrame(drcum)
 
 
-# In[10]:
+# In[8]:
 
 
 with open('activitydataset/activity-dataset-Jumping.txt', 'r') as f:
@@ -153,7 +138,7 @@ for x in range(20, len(jp)):
 jpcumdf = pd.DataFrame(jpcum)
 
 
-# In[11]:
+# In[9]:
 
 
 with open('activitydataset/activity-dataset-Standing.txt', 'r') as f:
@@ -167,7 +152,7 @@ for x in range(20, len(st)):
 stcumdf = pd.DataFrame.from_dict(stcum)
 
 
-# In[12]:
+# In[10]:
 
 
 with open('activitydataset/activity-dataset-Walking.txt', 'r') as f:
@@ -181,7 +166,7 @@ for x in range(20, len(wk)):
 wkcumdf = pd.DataFrame.from_dict(wkcum)
 
 
-# In[13]:
+# In[11]:
 
 
 #attach labels
@@ -200,7 +185,7 @@ kn = KNeighborsClassifier(n_neighbors=5).fit(X,y)
 
 # #### Loading cumulative datasets
 
-# In[14]:
+# In[12]:
 
 
 drtest = [] #an array of dictionaries, each dic containing info for one trace
@@ -212,7 +197,7 @@ for x in range(0, 20):
 drtestdata = pd.DataFrame(drtest)
 
 
-# In[15]:
+# In[13]:
 
 
 jptest = [] #an array of dictionaries, each dic containing info for one trace
@@ -224,7 +209,7 @@ for x in range(0,20):
 jptestdata = pd.DataFrame(jptest)
 
 
-# In[16]:
+# In[14]:
 
 
 sttest = [] #an array of dictionaries, each dic containing info for one trace
@@ -236,7 +221,7 @@ for x in range(0,20):
 sttestdata = pd.DataFrame.from_dict(sttest)
 
 
-# In[17]:
+# In[15]:
 
 
 wktest = [] #an array of dictionaries, each dic containing info for one trace
@@ -248,7 +233,7 @@ for x in range(0,20):
 wktestdata = pd.DataFrame.from_dict(wktest)
 
 
-# In[18]:
+# In[16]:
 
 
 test = pd.concat([drtestdata,jptestdata,sttestdata,wktestdata])
@@ -256,7 +241,7 @@ test = pd.concat([drtestdata,jptestdata,sttestdata,wktestdata])
 
 # #### Testing on cumulative dataset
 
-# In[19]:
+# In[17]:
 
 
 #output: accuracy
@@ -267,7 +252,7 @@ print("Cross-validation accuracy: ",len(np.where(test['class']==kn.predict(test.
 
 # #### First, we re-train our model with the enire class data set.
 
-# In[20]:
+# In[18]:
 
 
 with open('activitydataset/activity-dataset-Driving.txt', 'r') as f:
@@ -281,7 +266,7 @@ for x in range(0, len(dr)):
 drcumdf = pd.DataFrame(drcum)
 
 
-# In[21]:
+# In[19]:
 
 
 with open('activitydataset/activity-dataset-Jumping.txt', 'r') as f:
@@ -295,7 +280,7 @@ for x in range(0, len(jp)):
 jpcumdf = pd.DataFrame(jpcum)
 
 
-# In[22]:
+# In[20]:
 
 
 with open('activitydataset/activity-dataset-Standing.txt', 'r') as f:
@@ -309,7 +294,7 @@ for x in range(0, len(st)):
 stcumdf = pd.DataFrame.from_dict(stcum)
 
 
-# In[23]:
+# In[21]:
 
 
 with open('activitydataset/activity-dataset-Walking.txt', 'r') as f:
@@ -324,7 +309,7 @@ for x in range(0, len(wk)):
 wkcumdf = pd.DataFrame.from_dict(wkcum)
 
 
-# In[24]:
+# In[22]:
 
 
 #attach labels
@@ -341,12 +326,18 @@ kn = KNeighborsClassifier(n_neighbors=5).fit(X,y)
 
 # #### Next, we attempt to predict activity for each unknown trace:
 
-# ##### Unknown #1
+# In[23]:
 
-# In[25]:
 
 print("Classifications for test files:")
 clkey = {0:'driving',1:'jumping',2:'standing',3:'walking'}
+
+
+# ##### Unknown #1
+
+# In[24]:
+
+
 with open('activity-test-dataset/team2_1.txt', 'r') as f:
     unknown_trace = json.loads(f.read().replace('\'','\"'))
     
@@ -360,7 +351,7 @@ print("team2_1.txt: ",clkey[kn.predict(unk.iloc[:,:-1])[0]])
 
 # #### Unknown #2
 
-# In[26]:
+# In[25]:
 
 
 with open('activity-test-dataset/team2_2.txt', 'r') as f:
@@ -376,7 +367,7 @@ print("team2_2.txt: ",clkey[kn.predict(unk.iloc[:,:-1])[0]])
 
 # #### Unknown #3
 
-# In[27]:
+# In[26]:
 
 
 with open('activity-test-dataset/team2_3.txt', 'r') as f:
@@ -392,7 +383,7 @@ print("team2_3.txt: ",clkey[kn.predict(unk.iloc[:,:-1])[0]])
 
 # #### Unknown #4
 
-# In[28]:
+# In[27]:
 
 
 with open('activity-test-dataset/team2_4.txt', 'r') as f:
