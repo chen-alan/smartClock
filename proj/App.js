@@ -1,21 +1,65 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Accelerometer} from 'expo';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Hola Mundo!</Text>
-      </View>
-    );
-  }
+export default class AccelerometerSensor extends React.Component {
+    state = {
+        accelerometerData: {},
+    }
+
+    componentDidMount() {
+        this._toggle();
+    }
+
+    componentWillUnmount() {
+        this._unsubscribe();
+    }
+
+    _toggle = () => {
+        Accelerometer.setUpdateInterval(20);
+
+        if (this._subscription) {
+            this._unsubscribe();
+        } else {
+            this._subscribe();
+        }
+    }
+
+    _subscribe = () => {
+        this._subscription = Accelerometer.addListener(accelerometerData => {
+            this.setState({accelerometerData});
+        });
+    }
+
+    _unsubscribe = () => {
+        this._subscription && this._subscription.remove();
+        this._subscription = null;
+    }
+
+    render() {
+        let {x, y, z} = this.state.accelerometerData;
+
+        return (
+            <View style={{
+                flex: 1,
+                flexDirection: 'column',
+                justifyContent: 'center',
+            }}>
+                <Text>x: {round(x)}{"\n"}</Text>
+                <Text>y: {round(y)}{"\n"}</Text>
+                <Text>z: {round(z)}{"\n\n"}</Text>
+                <TouchableOpacity onPress={this._toggle}>
+                    <Text>Toggle</Text>
+                </TouchableOpacity>
+            </View>
+        );
+    }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+function round(n) {
+    if (!n) {
+        return 0;
+    }
+
+    return Math.floor(n * 10000) / 10000;
+}
