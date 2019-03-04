@@ -57,6 +57,7 @@ export default class Sensors extends React.Component {
       var temparr = this.state.data.slice();
       temparr.push(currdata);
       this.setState({data: temparr});
+      console.log(`gx data: ${currdata['gx']}`);
     }
 
     //processes cumulative dataset to determine whether user is exercising or not, every second
