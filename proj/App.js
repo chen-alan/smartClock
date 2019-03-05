@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {DeviceMotion} from 'expo-sensors';
+import { FileSystem } from 'expo';
 
 
 export default class Sensors extends React.Component {
@@ -41,12 +42,13 @@ export default class Sensors extends React.Component {
     _unsubscribe = () => {
         this.subscription && this.subscription.remove();
         this.subscription = null;
-        var RNFS = require('react-native-fs');
-        var path = RNFS.DocumentDirectoryPath + '/test.txt';
-        RNFS.writeFile(path, this.state.motionData, 'utf8').then((success) => {
+
+        var path = FileSystem.documentDirectory + '/test.txt';
+        FileSystem.writeAsStringAsync(path, this.state.motionData, 'utf8').then((success) => {
             console.log('FILE WRITTEN!');
         })
         .catch((err) => {
+            console.log("F");
             console.log(err.message);
         });
         //file.write JSON.stringify(this.state.motionData)
