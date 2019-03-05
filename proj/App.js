@@ -64,10 +64,10 @@ export default class Sensors extends React.Component {
                 justifyContent: 'center',
                 marginBottom: 50,
             }}>
-                // <Text>: {JSON.stringify(this.state.motionData)}{'\n'}{'\n'}</Text>
-                <TouchableOpacity onPress={this._toggle}>
-                    <Text>Toggle</Text>
-                </TouchableOpacity>
+                // <Text> {JSON.stringify(this.state.motionData)}{'\n'}{'\n'}</Text>
+                // <TouchableOpacity onPress={this._toggle}>
+                    // <Text>Toggle</Text>
+                // </TouchableOpacity>
             </View>
         );
     }

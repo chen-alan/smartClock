@@ -1,0 +1,4573 @@
+
+> @ start /Users/michaeltang/Documents/wambam/proj
+> expo start
+
+Starting project at /Users/michaeltang/Documents/wambam/proj
+Expo DevTools is running at http://localhost:19002
+Opening DevTools in the browser... (press shift-d to disable)
+Starting Metro Bundler on port 19001.
+Tunnel ready.
+
+  exp://10.150.224.118:19000
+
+  [47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m
+  [47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m
+  [47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[40m  [0m[47m  [0m[47m  [0m[47m  [0m[40m  [0m[47m  [0m
+  [47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m[47m  [0m
+
+  To run the app with live reloading, choose one of:
+  • Scan the QR code above with the Expo app (Android) or the Camera app (iOS).
+  • Press a for Android emulator, or i for iOS simulator.
+  • Press e to send a link to your phone with email/SMS.
+  • Press s to sign in and enable more options.
+
+Press ? to show a list of all available commands.
+Logs for your project will appear below. Press Ctrl+C to exit.
+Finished building JavaScript bundle in 3288ms.
+Running application "main" with appParams: {"rootTag":1,"initialProps":{"exp":{"manifest":{"splash":{"resizeMode":"contain","image":"./assets/splash.png","backgroundColor":"#ffffff","imageUrl":"http://10.150.224.118:19001/assets/./assets/splash.png"},"developer":{"projectRoot":"/Users/michaeltang/Documents/wambam/proj","tool":"expo-cli"},"loadedFromCache":false,"privacy":"public","logUrl":"http://10.150.224.118:19000/logs","orientation":"portrait","sdkVersion":"32.0.0","mainModuleName":"node_modules/expo/AppEntry","env":{},"platforms":["ios","android"],"xde":true,"id":"@anonymous/proj-886a3fc8-21e6-433e-8c1c-157cba991cdf","hostUri":"10.150.224.118:19000","iconUrl":"http://10.150.224.118:19001/assets/./assets/icon.png","assetBundlePatterns":["**/*"],"name":"slep","slug":"proj","debuggerHost":"10.150.224.118:19001","icon":"./assets/icon.png","isVerified":false,"packagerOpts":{"lanType":"ip","dev":true,"minify":false,"urlRandomness":"d3-cru","hostType":"lan"},"ios":{"supportsTablet":true},"updates":{"fallbackToCacheTimeout":0},"bundleUrl":"http://10.150.224.118:19001/node_modules/expo/AppEntry.bundle?platform=ios&dev=true&minify=false&hot=false&assetPlugin=%2FUsers%2Fmichaeltang%2FDocuments%2Fwambam%2Fproj%2Fnode_modules%2Fexpo%2Ftools%2FhashAssetFiles.js","version":"1.0.0"},"initialUri":"exp://10.150.224.118:19000","appOwnership":"expo","shell":0}}}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+Array []
+
+
+Finished building JavaScript bundle in 57ms.
+Running application "main" with appParams: {"rootTag":11,"initialProps":{"exp":{"manifest":{"splash":{"resizeMode":"contain","image":"./assets/splash.png","backgroundColor":"#ffffff","imageUrl":"http://10.150.224.118:19001/assets/./assets/splash.png"},"developer":{"projectRoot":"/Users/michaeltang/Documents/wambam/proj","tool":"expo-cli"},"loadedFromCache":false,"privacy":"public","logUrl":"http://10.150.224.118:19000/logs","orientation":"portrait","sdkVersion":"32.0.0","mainModuleName":"node_modules/expo/AppEntry","env":{},"platforms":["ios","android"],"xde":true,"id":"@anonymous/proj-886a3fc8-21e6-433e-8c1c-157cba991cdf","hostUri":"10.150.224.118:19000","iconUrl":"http://10.150.224.118:19001/assets/./assets/icon.png","assetBundlePatterns":["**/*"],"name":"slep","slug":"proj","debuggerHost":"10.150.224.118:19001","icon":"./assets/icon.png","isVerified":false,"packagerOpts":{"lanType":"ip","dev":true,"minify":false,"urlRandomness":"d3-cru","hostType":"lan"},"ios":{"supportsTablet":true},"updates":{"fallbackToCacheTimeout":0},"bundleUrl":"http://10.150.224.118:19001/node_modules/expo/AppEntry.bundle?platform=ios&dev=true&minify=false&hot=false&assetPlugin=%2FUsers%2Fmichaeltang%2FDocuments%2Fwambam%2Fproj%2Fnode_modules%2Fexpo%2Ftools%2FhashAssetFiles.js","version":"1.0.0"},"initialUri":"exp://10.150.224.118:19000","appOwnership":"expo","shell":0}}}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+Array []
+
+
+Finished building JavaScript bundle in 304ms.
+Running application "main" with appParams: {"rootTag":21,"initialProps":{"exp":{"manifest":{"splash":{"resizeMode":"contain","image":"./assets/splash.png","backgroundColor":"#ffffff","imageUrl":"http://10.150.224.118:19001/assets/./assets/splash.png"},"developer":{"projectRoot":"/Users/michaeltang/Documents/wambam/proj","tool":"expo-cli"},"loadedFromCache":false,"privacy":"public","logUrl":"http://10.150.224.118:19000/logs","orientation":"portrait","sdkVersion":"32.0.0","mainModuleName":"node_modules/expo/AppEntry","env":{},"platforms":["ios","android"],"xde":true,"id":"@anonymous/proj-886a3fc8-21e6-433e-8c1c-157cba991cdf","hostUri":"10.150.224.118:19000","iconUrl":"http://10.150.224.118:19001/assets/./assets/icon.png","assetBundlePatterns":["**/*"],"name":"slep","slug":"proj","debuggerHost":"10.150.224.118:19001","icon":"./assets/icon.png","isVerified":false,"packagerOpts":{"lanType":"ip","dev":true,"minify":false,"urlRandomness":"d3-cru","hostType":"lan"},"ios":{"supportsTablet":true},"updates":{"fallbackToCacheTimeout":0},"bundleUrl":"http://10.150.224.118:19001/node_modules/expo/AppEntry.bundle?platform=ios&dev=true&minify=false&hot=false&assetPlugin=%2FUsers%2Fmichaeltang%2FDocuments%2Fwambam%2Fproj%2Fnode_modules%2Fexpo%2Ftools%2FhashAssetFiles.js","version":"1.0.0"},"initialUri":"exp://10.150.224.118:19000","appOwnership":"expo","shell":0}}}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+Array []
+
+
+
+
+
+Finished building JavaScript bundle in 67ms.
+Running application "main" with appParams: {"rootTag":31,"initialProps":{"exp":{"manifest":{"splash":{"resizeMode":"contain","image":"./assets/splash.png","backgroundColor":"#ffffff","imageUrl":"http://10.150.224.118:19001/assets/./assets/splash.png"},"developer":{"projectRoot":"/Users/michaeltang/Documents/wambam/proj","tool":"expo-cli"},"loadedFromCache":false,"privacy":"public","logUrl":"http://10.150.224.118:19000/logs","orientation":"portrait","sdkVersion":"32.0.0","mainModuleName":"node_modules/expo/AppEntry","env":{},"platforms":["ios","android"],"xde":true,"id":"@anonymous/proj-886a3fc8-21e6-433e-8c1c-157cba991cdf","hostUri":"10.150.224.118:19000","iconUrl":"http://10.150.224.118:19001/assets/./assets/icon.png","assetBundlePatterns":["**/*"],"name":"slep","slug":"proj","debuggerHost":"10.150.224.118:19001","icon":"./assets/icon.png","isVerified":false,"packagerOpts":{"lanType":"ip","dev":true,"minify":false,"urlRandomness":"d3-cru","hostType":"lan"},"ios":{"supportsTablet":true},"updates":{"fallbackToCacheTimeout":0},"bundleUrl":"http://10.150.224.118:19001/node_modules/expo/AppEntry.bundle?platform=ios&dev=true&minify=false&hot=false&assetPlugin=%2FUsers%2Fmichaeltang%2FDocuments%2Fwambam%2Fproj%2Fnode_modules%2Fexpo%2Ftools%2FhashAssetFiles.js","version":"1.0.0"},"initialUri":"exp://10.150.224.118:19000","appOwnership":"expo","shell":0}}}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+Array []
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00046635201332989595,
+      "y": 0.0014211840976710022,
+      "z": 0.061329693437357946,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274024290379586,
+      "y": -0.013022882713119799,
+      "z": -9.747131154232193,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5526158518250561,
+      "beta": 0.0014723824070884892,
+      "gamma": 0.017657061122874722,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0016034012660384178,
+      "beta": -0.002939461264759302,
+      "gamma": -0.001822371268644929,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00046635201332989595,
+      "y": 0.0014211840976710022,
+      "z": 0.061329693437357946,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274024290379586,
+      "y": -0.013022882713119799,
+      "z": -9.747131154232193,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5526158518250561,
+      "beta": 0.0014723824070884892,
+      "gamma": 0.017657061122874722,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0016034012660384178,
+      "beta": -0.002939461264759302,
+      "gamma": -0.001822371268644929,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007215647149276805,
+      "y": -0.010932347711276158,
+      "z": 0.06563441378483503,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16780047836419953,
+      "y": -0.027842046139992194,
+      "z": -9.74279018114612,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5527745149648333,
+      "beta": 0.001723721293916256,
+      "gamma": 0.01784155557164816,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0006059650331735611,
+      "beta": 0.0002538752742111683,
+      "gamma": 0.0034722154960036278,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00046635201332989595,
+      "y": 0.0014211840976710022,
+      "z": 0.061329693437357946,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274024290379586,
+      "y": -0.013022882713119799,
+      "z": -9.747131154232193,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5526158518250561,
+      "beta": 0.0014723824070884892,
+      "gamma": 0.017657061122874722,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0016034012660384178,
+      "beta": -0.002939461264759302,
+      "gamma": -0.001822371268644929,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007215647149276805,
+      "y": -0.010932347711276158,
+      "z": 0.06563441378483503,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16780047836419953,
+      "y": -0.027842046139992194,
+      "z": -9.74279018114612,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5527745149648333,
+      "beta": 0.001723721293916256,
+      "gamma": 0.01784155557164816,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0006059650331735611,
+      "beta": 0.0002538752742111683,
+      "gamma": 0.0034722154960036278,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008482610927517342,
+      "y": -0.012234796781025459,
+      "z": 0.07297325446415925,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1830688929819555,
+      "y": -0.03098551626142365,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530966972258295,
+      "beta": 0.0019113893812544832,
+      "gamma": 0.017797738830396613,
+    },
+    "rotationRate": Object {
+      "alpha": -0.00048756692558526993,
+      "beta": 0.0002747192047536373,
+      "gamma": 0.00022957613691687584,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00046635201332989595,
+      "y": 0.0014211840976710022,
+      "z": 0.061329693437357946,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274024290379586,
+      "y": -0.013022882713119799,
+      "z": -9.747131154232193,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5526158518250561,
+      "beta": 0.0014723824070884892,
+      "gamma": 0.017657061122874722,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0016034012660384178,
+      "beta": -0.002939461264759302,
+      "gamma": -0.001822371268644929,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007215647149276805,
+      "y": -0.010932347711276158,
+      "z": 0.06563441378483503,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16780047836419953,
+      "y": -0.027842046139992194,
+      "z": -9.74279018114612,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5527745149648333,
+      "beta": 0.001723721293916256,
+      "gamma": 0.01784155557164816,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0006059650331735611,
+      "beta": 0.0002538752742111683,
+      "gamma": 0.0034722154960036278,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008482610927517342,
+      "y": -0.012234796781025459,
+      "z": 0.07297325446415925,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1830688929819555,
+      "y": -0.03098551626142365,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530966972258295,
+      "beta": 0.0019113893812544832,
+      "gamma": 0.017797738830396613,
+    },
+    "rotationRate": Object {
+      "alpha": -0.00048756692558526993,
+      "beta": 0.0002747192047536373,
+      "gamma": 0.00022957613691687584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0006502286809162428,
+      "y": 0.006391144025639228,
+      "z": 0.07299664332776956,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274020635869647,
+      "y": -0.01137628501630139,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530950376550992,
+      "beta": 0.0018111557943116532,
+      "gamma": 0.017675814793701002,
+    },
+    "rotationRate": Object {
+      "alpha": -0.000530904158949852,
+      "beta": -0.0028587093111127615,
+      "gamma": -0.0019239680841565132,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00046635201332989595,
+      "y": 0.0014211840976710022,
+      "z": 0.061329693437357946,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274024290379586,
+      "y": -0.013022882713119799,
+      "z": -9.747131154232193,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5526158518250561,
+      "beta": 0.0014723824070884892,
+      "gamma": 0.017657061122874722,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0016034012660384178,
+      "beta": -0.002939461264759302,
+      "gamma": -0.001822371268644929,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007215647149276805,
+      "y": -0.010932347711276158,
+      "z": 0.06563441378483503,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16780047836419953,
+      "y": -0.027842046139992194,
+      "z": -9.74279018114612,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5527745149648333,
+      "beta": 0.001723721293916256,
+      "gamma": 0.01784155557164816,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0006059650331735611,
+      "beta": 0.0002538752742111683,
+      "gamma": 0.0034722154960036278,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008482610927517342,
+      "y": -0.012234796781025459,
+      "z": 0.07297325446415925,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1830688929819555,
+      "y": -0.03098551626142365,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530966972258295,
+      "beta": 0.0019113893812544832,
+      "gamma": 0.017797738830396613,
+    },
+    "rotationRate": Object {
+      "alpha": -0.00048756692558526993,
+      "beta": 0.0002747192047536373,
+      "gamma": 0.00022957613691687584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0006502286809162428,
+      "y": 0.006391144025639228,
+      "z": 0.07299664332776956,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274020635869647,
+      "y": -0.01137628501630139,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530950376550992,
+      "beta": 0.0018111557943116532,
+      "gamma": 0.017675814793701002,
+    },
+    "rotationRate": Object {
+      "alpha": -0.000530904158949852,
+      "beta": -0.0028587093111127615,
+      "gamma": -0.0019239680841565132,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.015168262772874641,
+      "y": 0.01810831601888907,
+      "z": 0.07642720489781141,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1893556002498098,
+      "y": 0.0013472602138089318,
+      "z": -9.73201259279449,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528645427523562,
+      "beta": 0.001708569175412878,
+      "gamma": 0.017757058701481077,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005123959854245186,
+      "beta": -0.0007368642836809158,
+      "gamma": 0.00023461738601326942,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00046635201332989595,
+      "y": 0.0014211840976710022,
+      "z": 0.061329693437357946,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274024290379586,
+      "y": -0.013022882713119799,
+      "z": -9.747131154232193,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5526158518250561,
+      "beta": 0.0014723824070884892,
+      "gamma": 0.017657061122874722,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0016034012660384178,
+      "beta": -0.002939461264759302,
+      "gamma": -0.001822371268644929,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007215647149276805,
+      "y": -0.010932347711276158,
+      "z": 0.06563441378483503,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16780047836419953,
+      "y": -0.027842046139992194,
+      "z": -9.74279018114612,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5527745149648333,
+      "beta": 0.001723721293916256,
+      "gamma": 0.01784155557164816,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0006059650331735611,
+      "beta": 0.0002538752742111683,
+      "gamma": 0.0034722154960036278,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008482610927517342,
+      "y": -0.012234796781025459,
+      "z": 0.07297325446415925,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1830688929819555,
+      "y": -0.03098551626142365,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530966972258295,
+      "beta": 0.0019113893812544832,
+      "gamma": 0.017797738830396613,
+    },
+    "rotationRate": Object {
+      "alpha": -0.00048756692558526993,
+      "beta": 0.0002747192047536373,
+      "gamma": 0.00022957613691687584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0006502286809162428,
+      "y": 0.006391144025639228,
+      "z": 0.07299664332776956,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274020635869647,
+      "y": -0.01137628501630139,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530950376550992,
+      "beta": 0.0018111557943116532,
+      "gamma": 0.017675814793701002,
+    },
+    "rotationRate": Object {
+      "alpha": -0.000530904158949852,
+      "beta": -0.0028587093111127615,
+      "gamma": -0.0019239680841565132,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.015168262772874641,
+      "y": 0.01810831601888907,
+      "z": 0.07642720489781141,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1893556002498098,
+      "y": 0.0013472602138089318,
+      "z": -9.73201259279449,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528645427523562,
+      "beta": 0.001708569175412878,
+      "gamma": 0.017757058701481077,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005123959854245186,
+      "beta": -0.0007368642836809158,
+      "gamma": 0.00023461738601326942,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008888974160196739,
+      "y": 0.0007466894707590654,
+      "z": 0.05458434517214528,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18261953443984247,
+      "y": -0.013771298939825094,
+      "z": -9.753867146951961,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528558295110173,
+      "beta": 0.0014799177000230253,
+      "gamma": 0.017710482461586935,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005517825484275818,
+      "beta": 0.00034543639048933983,
+      "gamma": -0.0007048812694847584,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00046635201332989595,
+      "y": 0.0014211840976710022,
+      "z": 0.061329693437357946,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274024290379586,
+      "y": -0.013022882713119799,
+      "z": -9.747131154232193,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5526158518250561,
+      "beta": 0.0014723824070884892,
+      "gamma": 0.017657061122874722,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0016034012660384178,
+      "beta": -0.002939461264759302,
+      "gamma": -0.001822371268644929,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007215647149276805,
+      "y": -0.010932347711276158,
+      "z": 0.06563441378483503,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16780047836419953,
+      "y": -0.027842046139992194,
+      "z": -9.74279018114612,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5527745149648333,
+      "beta": 0.001723721293916256,
+      "gamma": 0.01784155557164816,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0006059650331735611,
+      "beta": 0.0002538752742111683,
+      "gamma": 0.0034722154960036278,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008482610927517342,
+      "y": -0.012234796781025459,
+      "z": 0.07297325446415925,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1830688929819555,
+      "y": -0.03098551626142365,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530966972258295,
+      "beta": 0.0019113893812544832,
+      "gamma": 0.017797738830396613,
+    },
+    "rotationRate": Object {
+      "alpha": -0.00048756692558526993,
+      "beta": 0.0002747192047536373,
+      "gamma": 0.00022957613691687584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0006502286809162428,
+      "y": 0.006391144025639228,
+      "z": 0.07299664332776956,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274020635869647,
+      "y": -0.01137628501630139,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530950376550992,
+      "beta": 0.0018111557943116532,
+      "gamma": 0.017675814793701002,
+    },
+    "rotationRate": Object {
+      "alpha": -0.000530904158949852,
+      "beta": -0.0028587093111127615,
+      "gamma": -0.0019239680841565132,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.015168262772874641,
+      "y": 0.01810831601888907,
+      "z": 0.07642720489781141,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1893556002498098,
+      "y": 0.0013472602138089318,
+      "z": -9.73201259279449,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528645427523562,
+      "beta": 0.001708569175412878,
+      "gamma": 0.017757058701481077,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005123959854245186,
+      "beta": -0.0007368642836809158,
+      "gamma": 0.00023461738601326942,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008888974160196739,
+      "y": 0.0007466894707590654,
+      "z": 0.05458434517214528,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18261953443984247,
+      "y": -0.013771298939825094,
+      "z": -9.753867146951961,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528558295110173,
+      "beta": 0.0014799177000230253,
+      "gamma": 0.017710482461586935,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005517825484275818,
+      "beta": 0.00034543639048933983,
+      "gamma": -0.0007048812694847584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.012639890071501014,
+      "y": 0.01388496333520628,
+      "z": 0.05622799756235963,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18651145961714732,
+      "y": -0.000748384249743328,
+      "z": -9.752220570953796,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5532933688237096,
+      "beta": 0.0014916771342315042,
+      "gamma": 0.017724857608489263,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005194051191210747,
+      "beta": 0.000326463021337986,
+      "gamma": -0.00183527497574687,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00046635201332989595,
+      "y": 0.0014211840976710022,
+      "z": 0.061329693437357946,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274024290379586,
+      "y": -0.013022882713119799,
+      "z": -9.747131154232193,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5526158518250561,
+      "beta": 0.0014723824070884892,
+      "gamma": 0.017657061122874722,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0016034012660384178,
+      "beta": -0.002939461264759302,
+      "gamma": -0.001822371268644929,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007215647149276805,
+      "y": -0.010932347711276158,
+      "z": 0.06563441378483503,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16780047836419953,
+      "y": -0.027842046139992194,
+      "z": -9.74279018114612,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5527745149648333,
+      "beta": 0.001723721293916256,
+      "gamma": 0.01784155557164816,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0006059650331735611,
+      "beta": 0.0002538752742111683,
+      "gamma": 0.0034722154960036278,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008482610927517342,
+      "y": -0.012234796781025459,
+      "z": 0.07297325446415925,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1830688929819555,
+      "y": -0.03098551626142365,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530966972258295,
+      "beta": 0.0019113893812544832,
+      "gamma": 0.017797738830396613,
+    },
+    "rotationRate": Object {
+      "alpha": -0.00048756692558526993,
+      "beta": 0.0002747192047536373,
+      "gamma": 0.00022957613691687584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0006502286809162428,
+      "y": 0.006391144025639228,
+      "z": 0.07299664332776956,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274020635869647,
+      "y": -0.01137628501630139,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530950376550992,
+      "beta": 0.0018111557943116532,
+      "gamma": 0.017675814793701002,
+    },
+    "rotationRate": Object {
+      "alpha": -0.000530904158949852,
+      "beta": -0.0028587093111127615,
+      "gamma": -0.0019239680841565132,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.015168262772874641,
+      "y": 0.01810831601888907,
+      "z": 0.07642720489781141,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1893556002498098,
+      "y": 0.0013472602138089318,
+      "z": -9.73201259279449,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528645427523562,
+      "beta": 0.001708569175412878,
+      "gamma": 0.017757058701481077,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005123959854245186,
+      "beta": -0.0007368642836809158,
+      "gamma": 0.00023461738601326942,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008888974160196739,
+      "y": 0.0007466894707590654,
+      "z": 0.05458434517214528,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18261953443984247,
+      "y": -0.013771298939825094,
+      "z": -9.753867146951961,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528558295110173,
+      "beta": 0.0014799177000230253,
+      "gamma": 0.017710482461586935,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005517825484275818,
+      "beta": 0.00034543639048933983,
+      "gamma": -0.0007048812694847584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.012639890071501014,
+      "y": 0.01388496333520628,
+      "z": 0.05622799756235963,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18651145961714732,
+      "y": -0.000748384249743328,
+      "z": -9.752220570953796,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5532933688237096,
+      "beta": 0.0014916771342315042,
+      "gamma": 0.017724857608489263,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005194051191210747,
+      "beta": 0.000326463021337986,
+      "gamma": -0.00183527497574687,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.01775982195109549,
+      "y": -0.0010551392458948428,
+      "z": 0.06999351324020608,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.15642397065119873,
+      "y": -0.015866945687446066,
+      "z": -9.738449208060047,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5536020359253926,
+      "beta": 0.0015098686523356971,
+      "gamma": 0.017756689978872673,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0004750499501824379,
+      "beta": 0.0003093564882874489,
+      "gamma": 0.00031809741631150246,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00046635201332989595,
+      "y": 0.0014211840976710022,
+      "z": 0.061329693437357946,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274024290379586,
+      "y": -0.013022882713119799,
+      "z": -9.747131154232193,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5526158518250561,
+      "beta": 0.0014723824070884892,
+      "gamma": 0.017657061122874722,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0016034012660384178,
+      "beta": -0.002939461264759302,
+      "gamma": -0.001822371268644929,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007215647149276805,
+      "y": -0.010932347711276158,
+      "z": 0.06563441378483503,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16780047836419953,
+      "y": -0.027842046139992194,
+      "z": -9.74279018114612,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5527745149648333,
+      "beta": 0.001723721293916256,
+      "gamma": 0.01784155557164816,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0006059650331735611,
+      "beta": 0.0002538752742111683,
+      "gamma": 0.0034722154960036278,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008482610927517342,
+      "y": -0.012234796781025459,
+      "z": 0.07297325446415925,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1830688929819555,
+      "y": -0.03098551626142365,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530966972258295,
+      "beta": 0.0019113893812544832,
+      "gamma": 0.017797738830396613,
+    },
+    "rotationRate": Object {
+      "alpha": -0.00048756692558526993,
+      "beta": 0.0002747192047536373,
+      "gamma": 0.00022957613691687584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0006502286809162428,
+      "y": 0.006391144025639228,
+      "z": 0.07299664332776956,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274020635869647,
+      "y": -0.01137628501630139,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530950376550992,
+      "beta": 0.0018111557943116532,
+      "gamma": 0.017675814793701002,
+    },
+    "rotationRate": Object {
+      "alpha": -0.000530904158949852,
+      "beta": -0.0028587093111127615,
+      "gamma": -0.0019239680841565132,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.015168262772874641,
+      "y": 0.01810831601888907,
+      "z": 0.07642720489781141,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1893556002498098,
+      "y": 0.0013472602138089318,
+      "z": -9.73201259279449,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528645427523562,
+      "beta": 0.001708569175412878,
+      "gamma": 0.017757058701481077,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005123959854245186,
+      "beta": -0.0007368642836809158,
+      "gamma": 0.00023461738601326942,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008888974160196739,
+      "y": 0.0007466894707590654,
+      "z": 0.05458434517214528,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18261953443984247,
+      "y": -0.013771298939825094,
+      "z": -9.753867146951961,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528558295110173,
+      "beta": 0.0014799177000230253,
+      "gamma": 0.017710482461586935,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005517825484275818,
+      "beta": 0.00034543639048933983,
+      "gamma": -0.0007048812694847584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.012639890071501014,
+      "y": 0.01388496333520628,
+      "z": 0.05622799756235963,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18651145961714732,
+      "y": -0.000748384249743328,
+      "z": -9.752220570953796,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5532933688237096,
+      "beta": 0.0014916771342315042,
+      "gamma": 0.017724857608489263,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005194051191210747,
+      "beta": 0.000326463021337986,
+      "gamma": -0.00183527497574687,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.01775982195109549,
+      "y": -0.0010551392458948428,
+      "z": 0.06999351324020608,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.15642397065119873,
+      "y": -0.015866945687446066,
+      "z": -9.738449208060047,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5536020359253926,
+      "beta": 0.0015098686523356971,
+      "gamma": 0.017756689978872673,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0004750499501824379,
+      "beta": 0.0003093564882874489,
+      "gamma": 0.00031809741631150246,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0002621745430317901,
+      "y": -0.0007407326195583153,
+      "z": 0.07059460703499099,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17378768026999403,
+      "y": -0.015417864659681535,
+      "z": -9.737850453151623,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5541164678970738,
+      "beta": 0.0014961403359994528,
+      "gamma": 0.017743034282827346,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005402658134698868,
+      "beta": -0.0018184673972427845,
+      "gamma": -0.0007988614961504936,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00046635201332989595,
+      "y": 0.0014211840976710022,
+      "z": 0.061329693437357946,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274024290379586,
+      "y": -0.013022882713119799,
+      "z": -9.747131154232193,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5526158518250561,
+      "beta": 0.0014723824070884892,
+      "gamma": 0.017657061122874722,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0016034012660384178,
+      "beta": -0.002939461264759302,
+      "gamma": -0.001822371268644929,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007215647149276805,
+      "y": -0.010932347711276158,
+      "z": 0.06563441378483503,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16780047836419953,
+      "y": -0.027842046139992194,
+      "z": -9.74279018114612,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5527745149648333,
+      "beta": 0.001723721293916256,
+      "gamma": 0.01784155557164816,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0006059650331735611,
+      "beta": 0.0002538752742111683,
+      "gamma": 0.0034722154960036278,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008482610927517342,
+      "y": -0.012234796781025459,
+      "z": 0.07297325446415925,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1830688929819555,
+      "y": -0.03098551626142365,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530966972258295,
+      "beta": 0.0019113893812544832,
+      "gamma": 0.017797738830396613,
+    },
+    "rotationRate": Object {
+      "alpha": -0.00048756692558526993,
+      "beta": 0.0002747192047536373,
+      "gamma": 0.00022957613691687584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0006502286809162428,
+      "y": 0.006391144025639228,
+      "z": 0.07299664332776956,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274020635869647,
+      "y": -0.01137628501630139,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530950376550992,
+      "beta": 0.0018111557943116532,
+      "gamma": 0.017675814793701002,
+    },
+    "rotationRate": Object {
+      "alpha": -0.000530904158949852,
+      "beta": -0.0028587093111127615,
+      "gamma": -0.0019239680841565132,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.015168262772874641,
+      "y": 0.01810831601888907,
+      "z": 0.07642720489781141,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1893556002498098,
+      "y": 0.0013472602138089318,
+      "z": -9.73201259279449,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528645427523562,
+      "beta": 0.001708569175412878,
+      "gamma": 0.017757058701481077,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005123959854245186,
+      "beta": -0.0007368642836809158,
+      "gamma": 0.00023461738601326942,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008888974160196739,
+      "y": 0.0007466894707590654,
+      "z": 0.05458434517214528,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18261953443984247,
+      "y": -0.013771298939825094,
+      "z": -9.753867146951961,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528558295110173,
+      "beta": 0.0014799177000230253,
+      "gamma": 0.017710482461586935,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005517825484275818,
+      "beta": 0.00034543639048933983,
+      "gamma": -0.0007048812694847584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.012639890071501014,
+      "y": 0.01388496333520628,
+      "z": 0.05622799756235963,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18651145961714732,
+      "y": -0.000748384249743328,
+      "z": -9.752220570953796,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5532933688237096,
+      "beta": 0.0014916771342315042,
+      "gamma": 0.017724857608489263,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005194051191210747,
+      "beta": 0.000326463021337986,
+      "gamma": -0.00183527497574687,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.01775982195109549,
+      "y": -0.0010551392458948428,
+      "z": 0.06999351324020608,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.15642397065119873,
+      "y": -0.015866945687446066,
+      "z": -9.738449208060047,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5536020359253926,
+      "beta": 0.0015098686523356971,
+      "gamma": 0.017756689978872673,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0004750499501824379,
+      "beta": 0.0003093564882874489,
+      "gamma": 0.00031809741631150246,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0002621745430317901,
+      "y": -0.0007407326195583153,
+      "z": 0.07059460703499099,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17378768026999403,
+      "y": -0.015417864659681535,
+      "z": -9.737850453151623,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5541164678970738,
+      "beta": 0.0014961403359994528,
+      "gamma": 0.017743034282827346,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005402658134698868,
+      "beta": -0.0018184673972427845,
+      "gamma": -0.0007988614961504936,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008445170473191155,
+      "y": -0.005252535772735101,
+      "z": 0.04650349279478405,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18202059680592164,
+      "y": -0.01990852533082621,
+      "z": -9.761950338215684,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5545087409044311,
+      "beta": 0.0014939851167687023,
+      "gamma": 0.01769466540301498,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005357423797249794,
+      "beta": 0.0013339212164282799,
+      "gamma": 0.0024080551229417324,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00046635201332989595,
+      "y": 0.0014211840976710022,
+      "z": 0.061329693437357946,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274024290379586,
+      "y": -0.013022882713119799,
+      "z": -9.747131154232193,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5526158518250561,
+      "beta": 0.0014723824070884892,
+      "gamma": 0.017657061122874722,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0016034012660384178,
+      "beta": -0.002939461264759302,
+      "gamma": -0.001822371268644929,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007215647149276805,
+      "y": -0.010932347711276158,
+      "z": 0.06563441378483503,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16780047836419953,
+      "y": -0.027842046139992194,
+      "z": -9.74279018114612,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5527745149648333,
+      "beta": 0.001723721293916256,
+      "gamma": 0.01784155557164816,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0006059650331735611,
+      "beta": 0.0002538752742111683,
+      "gamma": 0.0034722154960036278,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008482610927517342,
+      "y": -0.012234796781025459,
+      "z": 0.07297325446415925,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1830688929819555,
+      "y": -0.03098551626142365,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530966972258295,
+      "beta": 0.0019113893812544832,
+      "gamma": 0.017797738830396613,
+    },
+    "rotationRate": Object {
+      "alpha": -0.00048756692558526993,
+      "beta": 0.0002747192047536373,
+      "gamma": 0.00022957613691687584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0006502286809162428,
+      "y": 0.006391144025639228,
+      "z": 0.07299664332776956,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274020635869647,
+      "y": -0.01137628501630139,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530950376550992,
+      "beta": 0.0018111557943116532,
+      "gamma": 0.017675814793701002,
+    },
+    "rotationRate": Object {
+      "alpha": -0.000530904158949852,
+      "beta": -0.0028587093111127615,
+      "gamma": -0.0019239680841565132,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.015168262772874641,
+      "y": 0.01810831601888907,
+      "z": 0.07642720489781141,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1893556002498098,
+      "y": 0.0013472602138089318,
+      "z": -9.73201259279449,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528645427523562,
+      "beta": 0.001708569175412878,
+      "gamma": 0.017757058701481077,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005123959854245186,
+      "beta": -0.0007368642836809158,
+      "gamma": 0.00023461738601326942,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008888974160196739,
+      "y": 0.0007466894707590654,
+      "z": 0.05458434517214528,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18261953443984247,
+      "y": -0.013771298939825094,
+      "z": -9.753867146951961,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528558295110173,
+      "beta": 0.0014799177000230253,
+      "gamma": 0.017710482461586935,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005517825484275818,
+      "beta": 0.00034543639048933983,
+      "gamma": -0.0007048812694847584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.012639890071501014,
+      "y": 0.01388496333520628,
+      "z": 0.05622799756235963,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18651145961714732,
+      "y": -0.000748384249743328,
+      "z": -9.752220570953796,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5532933688237096,
+      "beta": 0.0014916771342315042,
+      "gamma": 0.017724857608489263,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005194051191210747,
+      "beta": 0.000326463021337986,
+      "gamma": -0.00183527497574687,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.01775982195109549,
+      "y": -0.0010551392458948428,
+      "z": 0.06999351324020608,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.15642397065119873,
+      "y": -0.015866945687446066,
+      "z": -9.738449208060047,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5536020359253926,
+      "beta": 0.0015098686523356971,
+      "gamma": 0.017756689978872673,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0004750499501824379,
+      "beta": 0.0003093564882874489,
+      "gamma": 0.00031809741631150246,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0002621745430317901,
+      "y": -0.0007407326195583153,
+      "z": 0.07059460703499099,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17378768026999403,
+      "y": -0.015417864659681535,
+      "z": -9.737850453151623,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5541164678970738,
+      "beta": 0.0014961403359994528,
+      "gamma": 0.017743034282827346,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005402658134698868,
+      "beta": -0.0018184673972427845,
+      "gamma": -0.0007988614961504936,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008445170473191155,
+      "y": -0.005252535772735101,
+      "z": 0.04650349279478405,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18202059680592164,
+      "y": -0.01990852533082621,
+      "z": -9.761950338215684,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5545087409044311,
+      "beta": 0.0014939851167687023,
+      "gamma": 0.01769466540301498,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005357423797249794,
+      "beta": 0.0013339212164282799,
+      "gamma": 0.0024080551229417324,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007431098782737067,
+      "y": 0.015010671168025347,
+      "z": 0.07014846446162437,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16645320673004704,
+      "y": 5.8243752154574224e-8,
+      "z": -9.73829951933294,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5547374946498773,
+      "beta": 0.0015301343377247196,
+      "gamma": 0.017726157703191463,
+    },
+    "rotationRate": Object {
+      "alpha": 0.00047807395458221436,
+      "beta": -0.0018492341041564941,
+      "gamma": -0.0008426764979958534,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00046635201332989595,
+      "y": 0.0014211840976710022,
+      "z": 0.061329693437357946,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274024290379586,
+      "y": -0.013022882713119799,
+      "z": -9.747131154232193,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5526158518250561,
+      "beta": 0.0014723824070884892,
+      "gamma": 0.017657061122874722,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0016034012660384178,
+      "beta": -0.002939461264759302,
+      "gamma": -0.001822371268644929,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007215647149276805,
+      "y": -0.010932347711276158,
+      "z": 0.06563441378483503,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16780047836419953,
+      "y": -0.027842046139992194,
+      "z": -9.74279018114612,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5527745149648333,
+      "beta": 0.001723721293916256,
+      "gamma": 0.01784155557164816,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0006059650331735611,
+      "beta": 0.0002538752742111683,
+      "gamma": 0.0034722154960036278,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008482610927517342,
+      "y": -0.012234796781025459,
+      "z": 0.07297325446415925,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1830688929819555,
+      "y": -0.03098551626142365,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530966972258295,
+      "beta": 0.0019113893812544832,
+      "gamma": 0.017797738830396613,
+    },
+    "rotationRate": Object {
+      "alpha": -0.00048756692558526993,
+      "beta": 0.0002747192047536373,
+      "gamma": 0.00022957613691687584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0006502286809162428,
+      "y": 0.006391144025639228,
+      "z": 0.07299664332776956,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274020635869647,
+      "y": -0.01137628501630139,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530950376550992,
+      "beta": 0.0018111557943116532,
+      "gamma": 0.017675814793701002,
+    },
+    "rotationRate": Object {
+      "alpha": -0.000530904158949852,
+      "beta": -0.0028587093111127615,
+      "gamma": -0.0019239680841565132,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.015168262772874641,
+      "y": 0.01810831601888907,
+      "z": 0.07642720489781141,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1893556002498098,
+      "y": 0.0013472602138089318,
+      "z": -9.73201259279449,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528645427523562,
+      "beta": 0.001708569175412878,
+      "gamma": 0.017757058701481077,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005123959854245186,
+      "beta": -0.0007368642836809158,
+      "gamma": 0.00023461738601326942,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008888974160196739,
+      "y": 0.0007466894707590654,
+      "z": 0.05458434517214528,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18261953443984247,
+      "y": -0.013771298939825094,
+      "z": -9.753867146951961,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528558295110173,
+      "beta": 0.0014799177000230253,
+      "gamma": 0.017710482461586935,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005517825484275818,
+      "beta": 0.00034543639048933983,
+      "gamma": -0.0007048812694847584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.012639890071501014,
+      "y": 0.01388496333520628,
+      "z": 0.05622799756235963,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18651145961714732,
+      "y": -0.000748384249743328,
+      "z": -9.752220570953796,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5532933688237096,
+      "beta": 0.0014916771342315042,
+      "gamma": 0.017724857608489263,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005194051191210747,
+      "beta": 0.000326463021337986,
+      "gamma": -0.00183527497574687,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.01775982195109549,
+      "y": -0.0010551392458948428,
+      "z": 0.06999351324020608,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.15642397065119873,
+      "y": -0.015866945687446066,
+      "z": -9.738449208060047,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5536020359253926,
+      "beta": 0.0015098686523356971,
+      "gamma": 0.017756689978872673,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0004750499501824379,
+      "beta": 0.0003093564882874489,
+      "gamma": 0.00031809741631150246,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0002621745430317901,
+      "y": -0.0007407326195583153,
+      "z": 0.07059460703499099,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17378768026999403,
+      "y": -0.015417864659681535,
+      "z": -9.737850453151623,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5541164678970738,
+      "beta": 0.0014961403359994528,
+      "gamma": 0.017743034282827346,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005402658134698868,
+      "beta": -0.0018184673972427845,
+      "gamma": -0.0007988614961504936,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008445170473191155,
+      "y": -0.005252535772735101,
+      "z": 0.04650349279478405,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18202059680592164,
+      "y": -0.01990852533082621,
+      "z": -9.761950338215684,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5545087409044311,
+      "beta": 0.0014939851167687023,
+      "gamma": 0.01769466540301498,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005357423797249794,
+      "beta": 0.0013339212164282799,
+      "gamma": 0.0024080551229417324,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007431098782737067,
+      "y": 0.015010671168025347,
+      "z": 0.07014846446162437,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16645320673004704,
+      "y": 5.8243752154574224e-8,
+      "z": -9.73829951933294,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5547374946498773,
+      "beta": 0.0015301343377247196,
+      "gamma": 0.017726157703191463,
+    },
+    "rotationRate": Object {
+      "alpha": 0.00047807395458221436,
+      "beta": -0.0018492341041564941,
+      "gamma": -0.0008426764979958534,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.017396472300399424,
+      "y": 0.015648437970049223,
+      "z": 0.05233492121442396,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.15657386037635135,
+      "y": 0.0014969329524339159,
+      "z": -9.75611247785855,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5550530781735952,
+      "beta": 0.0014425595492935787,
+      "gamma": 0.01773492626073247,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005043121054768562,
+      "beta": -0.0018318514339625835,
+      "gamma": 0.0012807492166757584,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.0014166890504458962,
+      "y": 0.008298816486404625,
+      "z": 0.07204880962996185,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16675324199604802,
+      "y": -0.003442841865471613,
+      "z": -9.736503254607669,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.550654257027933,
+      "beta": 0.0011969073426219441,
+      "gamma": 0.01714355563328079,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0003899671137332916,
+      "beta": 0.0034045479260385036,
+      "gamma": 0.00021126912906765938,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.008575015211327752,
+      "y": -0.010906217965211518,
+      "z": 0.07491862319494658,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16630406617943194,
+      "y": -0.027243335770908206,
+      "z": -9.73350948006555,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5510802254986895,
+      "beta": 0.0016653542508237105,
+      "gamma": 0.01782758184570023,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005341004580259323,
+      "beta": 0.00021429872140288353,
+      "gamma": 0.001220028381794691,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00471956204321522,
+      "y": -0.007522991435156001,
+      "z": 0.07536944354103525,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17019608271948528,
+      "y": -0.022153938463889356,
+      "z": -9.733060413884232,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5524573595840114,
+      "beta": 0.0014914324203194405,
+      "gamma": 0.01783130482588467,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005322368815541267,
+      "beta": 0.002409962471574545,
+      "gamma": -0.0029748128727078438,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.011394158996006709,
+      "y": 0.0068659379569284695,
+      "z": 0.05755882390178613,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18606299642996937,
+      "y": -0.009280695370398218,
+      "z": -9.750873372409842,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5531289735775708,
+      "beta": 0.0016459368283286884,
+      "gamma": 0.017806146417235335,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005609076470136642,
+      "beta": 0.0002246513031423092,
+      "gamma": 0.0012963763438165188,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.006776758778139325,
+      "y": -0.005360709266932773,
+      "z": 0.07734814140246726,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16615419472682902,
+      "y": -0.021704843731712553,
+      "z": -9.731114460431854,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5525646183589867,
+      "beta": 0.0016660694580111833,
+      "gamma": 0.017628964873498923,
+    },
+    "rotationRate": Object {
+      "alpha": -0.001548195257782936,
+      "beta": -0.0018923517782241106,
+      "gamma": 0.0012967479415237904,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.00046635201332989595,
+      "y": 0.0014211840976710022,
+      "z": 0.061329693437357946,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274024290379586,
+      "y": -0.013022882713119799,
+      "z": -9.747131154232193,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5526158518250561,
+      "beta": 0.0014723824070884892,
+      "gamma": 0.017657061122874722,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0016034012660384178,
+      "beta": -0.002939461264759302,
+      "gamma": -0.001822371268644929,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007215647149276805,
+      "y": -0.010932347711276158,
+      "z": 0.06563441378483503,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16780047836419953,
+      "y": -0.027842046139992194,
+      "z": -9.74279018114612,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5527745149648333,
+      "beta": 0.001723721293916256,
+      "gamma": 0.01784155557164816,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0006059650331735611,
+      "beta": 0.0002538752742111683,
+      "gamma": 0.0034722154960036278,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008482610927517342,
+      "y": -0.012234796781025459,
+      "z": 0.07297325446415925,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1830688929819555,
+      "y": -0.03098551626142365,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530966972258295,
+      "beta": 0.0019113893812544832,
+      "gamma": 0.017797738830396613,
+    },
+    "rotationRate": Object {
+      "alpha": -0.00048756692558526993,
+      "beta": 0.0002747192047536373,
+      "gamma": 0.00022957613691687584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0006502286809162428,
+      "y": 0.006391144025639228,
+      "z": 0.07299664332776956,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17274020635869647,
+      "y": -0.01137628501630139,
+      "z": -9.735455433517927,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5530950376550992,
+      "beta": 0.0018111557943116532,
+      "gamma": 0.017675814793701002,
+    },
+    "rotationRate": Object {
+      "alpha": -0.000530904158949852,
+      "beta": -0.0028587093111127615,
+      "gamma": -0.0019239680841565132,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.015168262772874641,
+      "y": 0.01810831601888907,
+      "z": 0.07642720489781141,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.1893556002498098,
+      "y": 0.0013472602138089318,
+      "z": -9.73201259279449,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528645427523562,
+      "beta": 0.001708569175412878,
+      "gamma": 0.017757058701481077,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005123959854245186,
+      "beta": -0.0007368642836809158,
+      "gamma": 0.00023461738601326942,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008888974160196739,
+      "y": 0.0007466894707590654,
+      "z": 0.05458434517214528,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18261953443984247,
+      "y": -0.013771298939825094,
+      "z": -9.753867146951961,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5528558295110173,
+      "beta": 0.0014799177000230253,
+      "gamma": 0.017710482461586935,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005517825484275818,
+      "beta": 0.00034543639048933983,
+      "gamma": -0.0007048812694847584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.012639890071501014,
+      "y": 0.01388496333520628,
+      "z": 0.05622799756235963,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18651145961714732,
+      "y": -0.000748384249743328,
+      "z": -9.752220570953796,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5532933688237096,
+      "beta": 0.0014916771342315042,
+      "gamma": 0.017724857608489263,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0005194051191210747,
+      "beta": 0.000326463021337986,
+      "gamma": -0.00183527497574687,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.01775982195109549,
+      "y": -0.0010551392458948428,
+      "z": 0.06999351324020608,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.15642397065119873,
+      "y": -0.015866945687446066,
+      "z": -9.738449208060047,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5536020359253926,
+      "beta": 0.0015098686523356971,
+      "gamma": 0.017756689978872673,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0004750499501824379,
+      "beta": 0.0003093564882874489,
+      "gamma": 0.00031809741631150246,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0002621745430317901,
+      "y": -0.0007407326195583153,
+      "z": 0.07059460703499099,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17378768026999403,
+      "y": -0.015417864659681535,
+      "z": -9.737850453151623,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5541164678970738,
+      "beta": 0.0014961403359994528,
+      "gamma": 0.017743034282827346,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005402658134698868,
+      "beta": -0.0018184673972427845,
+      "gamma": -0.0007988614961504936,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.008445170473191155,
+      "y": -0.005252535772735101,
+      "z": 0.04650349279478405,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.18202059680592164,
+      "y": -0.01990852533082621,
+      "z": -9.761950338215684,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5545087409044311,
+      "beta": 0.0014939851167687023,
+      "gamma": 0.01769466540301498,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005357423797249794,
+      "beta": 0.0013339212164282799,
+      "gamma": 0.0024080551229417324,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007431098782737067,
+      "y": 0.015010671168025347,
+      "z": 0.07014846446162437,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16645320673004704,
+      "y": 5.8243752154574224e-8,
+      "z": -9.73829951933294,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5547374946498773,
+      "beta": 0.0015301343377247196,
+      "gamma": 0.017726157703191463,
+    },
+    "rotationRate": Object {
+      "alpha": 0.00047807395458221436,
+      "beta": -0.0018492341041564941,
+      "gamma": -0.0008426764979958534,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.017396472300399424,
+      "y": 0.015648437970049223,
+      "z": 0.05233492121442396,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.15657386037635135,
+      "y": 0.0014969329524339159,
+      "z": -9.75611247785855,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5550530781735952,
+      "beta": 0.0014425595492935787,
+      "gamma": 0.01773492626073247,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005043121054768562,
+      "beta": -0.0018318514339625835,
+      "gamma": 0.0012807492166757584,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.02329815867361873,
+      "y": 0.005863103884537146,
+      "z": 0.11257644777231235,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.15552582001601323,
+      "y": -0.005239059767334631,
+      "z": -9.695787920834846,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5156573910966429,
+      "beta": 0.0011317192199874853,
+      "gamma": 0.01822976470407381,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0015164082869887352,
+      "beta": 0.0067041669972240925,
+      "gamma": 0.003453140612691641,
+    },
+  },
+]
+Finished building JavaScript bundle in 161ms.
+Running application "main" with appParams: {"rootTag":41,"initialProps":{"exp":{"manifest":{"splash":{"resizeMode":"contain","image":"./assets/splash.png","backgroundColor":"#ffffff","imageUrl":"http://10.150.224.118:19001/assets/./assets/splash.png"},"developer":{"projectRoot":"/Users/michaeltang/Documents/wambam/proj","tool":"expo-cli"},"loadedFromCache":false,"privacy":"public","logUrl":"http://10.150.224.118:19000/logs","orientation":"portrait","sdkVersion":"32.0.0","mainModuleName":"node_modules/expo/AppEntry","env":{},"platforms":["ios","android"],"xde":true,"id":"@anonymous/proj-886a3fc8-21e6-433e-8c1c-157cba991cdf","hostUri":"10.150.224.118:19000","iconUrl":"http://10.150.224.118:19001/assets/./assets/icon.png","assetBundlePatterns":["**/*"],"name":"slep","slug":"proj","debuggerHost":"10.150.224.118:19001","icon":"./assets/icon.png","isVerified":false,"packagerOpts":{"lanType":"ip","dev":true,"minify":false,"urlRandomness":"d3-cru","hostType":"lan"},"ios":{"supportsTablet":true},"updates":{"fallbackToCacheTimeout":0},"bundleUrl":"http://10.150.224.118:19001/node_modules/expo/AppEntry.bundle?platform=ios&dev=true&minify=false&hot=false&assetPlugin=%2FUsers%2Fmichaeltang%2FDocuments%2Fwambam%2Fproj%2Fnode_modules%2Fexpo%2Ftools%2FhashAssetFiles.js","version":"1.0.0"},"initialUri":"exp://10.150.224.118:19000","appOwnership":"expo","shell":0}}}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+
+
+Finished building JavaScript bundle in 178ms.
+Running application "main" with appParams: {"rootTag":51,"initialProps":{"exp":{"manifest":{"splash":{"resizeMode":"contain","image":"./assets/splash.png","backgroundColor":"#ffffff","imageUrl":"http://10.150.224.118:19001/assets/./assets/splash.png"},"developer":{"projectRoot":"/Users/michaeltang/Documents/wambam/proj","tool":"expo-cli"},"loadedFromCache":false,"privacy":"public","logUrl":"http://10.150.224.118:19000/logs","orientation":"portrait","sdkVersion":"32.0.0","mainModuleName":"node_modules/expo/AppEntry","env":{},"platforms":["ios","android"],"xde":true,"id":"@anonymous/proj-886a3fc8-21e6-433e-8c1c-157cba991cdf","hostUri":"10.150.224.118:19000","iconUrl":"http://10.150.224.118:19001/assets/./assets/icon.png","assetBundlePatterns":["**/*"],"name":"slep","slug":"proj","debuggerHost":"10.150.224.118:19001","icon":"./assets/icon.png","isVerified":false,"packagerOpts":{"lanType":"ip","dev":true,"minify":false,"urlRandomness":"d3-cru","hostType":"lan"},"ios":{"supportsTablet":true},"updates":{"fallbackToCacheTimeout":0},"bundleUrl":"http://10.150.224.118:19001/node_modules/expo/AppEntry.bundle?platform=ios&dev=true&minify=false&hot=false&assetPlugin=%2FUsers%2Fmichaeltang%2FDocuments%2Fwambam%2Fproj%2Fnode_modules%2Fexpo%2Ftools%2FhashAssetFiles.js","version":"1.0.0"},"initialUri":"exp://10.150.224.118:19000","appOwnership":"expo","shell":0}}}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+Array []
+
+
+Finished building JavaScript bundle in 148ms.
+Running application "main" with appParams: {"rootTag":61,"initialProps":{"exp":{"manifest":{"splash":{"resizeMode":"contain","image":"./assets/splash.png","backgroundColor":"#ffffff","imageUrl":"http://10.150.224.118:19001/assets/./assets/splash.png"},"developer":{"projectRoot":"/Users/michaeltang/Documents/wambam/proj","tool":"expo-cli"},"loadedFromCache":false,"privacy":"public","logUrl":"http://10.150.224.118:19000/logs","orientation":"portrait","sdkVersion":"32.0.0","mainModuleName":"node_modules/expo/AppEntry","env":{},"platforms":["ios","android"],"xde":true,"id":"@anonymous/proj-886a3fc8-21e6-433e-8c1c-157cba991cdf","hostUri":"10.150.224.118:19000","iconUrl":"http://10.150.224.118:19001/assets/./assets/icon.png","assetBundlePatterns":["**/*"],"name":"slep","slug":"proj","debuggerHost":"10.150.224.118:19001","icon":"./assets/icon.png","isVerified":false,"packagerOpts":{"lanType":"ip","dev":true,"minify":false,"urlRandomness":"d3-cru","hostType":"lan"},"ios":{"supportsTablet":true},"updates":{"fallbackToCacheTimeout":0},"bundleUrl":"http://10.150.224.118:19001/node_modules/expo/AppEntry.bundle?platform=ios&dev=true&minify=false&hot=false&assetPlugin=%2FUsers%2Fmichaeltang%2FDocuments%2Fwambam%2Fproj%2Fnode_modules%2Fexpo%2Ftools%2FhashAssetFiles.js","version":"1.0.0"},"initialUri":"exp://10.150.224.118:19000","appOwnership":"expo","shell":0}}}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+Array []
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.003546884621403734,
+      "y": -0.01880165878081197,
+      "z": 0.06490292707542267,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17079262664939598,
+      "y": -0.03263196891987885,
+      "z": -9.74353862478165,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5123833069179466,
+      "beta": 0.0014098180076383773,
+      "gamma": 0.01777256466496333,
+    },
+    "rotationRate": Object {
+      "alpha": 0.001499151811003685,
+      "beta": 0.0012590941041707993,
+      "gamma": 0.00034674652852118015,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.003546884621403734,
+      "y": -0.01880165878081197,
+      "z": 0.06490292707542267,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17079262664939598,
+      "y": -0.03263196891987885,
+      "z": -9.74353862478165,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5123833069179466,
+      "beta": 0.0014098180076383773,
+      "gamma": 0.01777256466496333,
+    },
+    "rotationRate": Object {
+      "alpha": 0.001499151811003685,
+      "beta": 0.0012590941041707993,
+      "gamma": 0.00034674652852118015,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007237281848116339,
+      "y": 0.0038208175501646124,
+      "z": 0.07480343304166581,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16585284383724996,
+      "y": -0.010478031598023851,
+      "z": -9.733659168792656,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5124381642229432,
+      "beta": 0.0014575793579897172,
+      "gamma": 0.01764518672573257,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005149627104401588,
+      "beta": 0.002383924089372158,
+      "gamma": 0.0025021093897521496,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.003546884621403734,
+      "y": -0.01880165878081197,
+      "z": 0.06490292707542267,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17079262664939598,
+      "y": -0.03263196891987885,
+      "z": -9.74353862478165,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5123833069179466,
+      "beta": 0.0014098180076383773,
+      "gamma": 0.01777256466496333,
+    },
+    "rotationRate": Object {
+      "alpha": 0.001499151811003685,
+      "beta": 0.0012590941041707993,
+      "gamma": 0.00034674652852118015,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007237281848116339,
+      "y": 0.0038208175501646124,
+      "z": 0.07480343304166581,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16585284383724996,
+      "y": -0.010478031598023851,
+      "z": -9.733659168792656,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5124381642229432,
+      "beta": 0.0014575793579897172,
+      "gamma": 0.01764518672573257,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005149627104401588,
+      "beta": 0.002383924089372158,
+      "gamma": 0.0025021093897521496,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.02883550867845841,
+      "y": -0.0063466046857563185,
+      "z": 0.060012900416097636,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.20028119625397345,
+      "y": -0.020956233359166743,
+      "z": -9.748478352776146,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5124974409752607,
+      "beta": 0.0014892592336273325,
+      "gamma": 0.017477532922807633,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0015634335577487946,
+      "beta": -0.0018107686191797256,
+      "gamma": -0.0017326076049357653,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.003546884621403734,
+      "y": -0.01880165878081197,
+      "z": 0.06490292707542267,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17079262664939598,
+      "y": -0.03263196891987885,
+      "z": -9.74353862478165,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5123833069179466,
+      "beta": 0.0014098180076383773,
+      "gamma": 0.01777256466496333,
+    },
+    "rotationRate": Object {
+      "alpha": 0.001499151811003685,
+      "beta": 0.0012590941041707993,
+      "gamma": 0.00034674652852118015,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007237281848116339,
+      "y": 0.0038208175501646124,
+      "z": 0.07480343304166581,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16585284383724996,
+      "y": -0.010478031598023851,
+      "z": -9.733659168792656,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5124381642229432,
+      "beta": 0.0014575793579897172,
+      "gamma": 0.01764518672573257,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005149627104401588,
+      "beta": 0.002383924089372158,
+      "gamma": 0.0025021093897521496,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.02883550867845841,
+      "y": -0.0063466046857563185,
+      "z": 0.060012900416097636,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.20028119625397345,
+      "y": -0.020956233359166743,
+      "z": -9.748478352776146,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5124974409752607,
+      "beta": 0.0014892592336273325,
+      "gamma": 0.017477532922807633,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0015634335577487946,
+      "beta": -0.0018107686191797256,
+      "gamma": -0.0017326076049357653,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0021731543352920824,
+      "y": 0.018551717709801352,
+      "z": 0.06357151601440592,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17109189446830975,
+      "y": 0.002844295949334885,
+      "z": -9.744885823325603,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5123406124455363,
+      "beta": 0.001601164859984361,
+      "gamma": 0.01766302562178922,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005108555778861046,
+      "beta": 0.0024146828800439835,
+      "gamma": 0.0003564446233212948,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.003546884621403734,
+      "y": -0.01880165878081197,
+      "z": 0.06490292707542267,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17079262664939598,
+      "y": -0.03263196891987885,
+      "z": -9.74353862478165,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5123833069179466,
+      "beta": 0.0014098180076383773,
+      "gamma": 0.01777256466496333,
+    },
+    "rotationRate": Object {
+      "alpha": 0.001499151811003685,
+      "beta": 0.0012590941041707993,
+      "gamma": 0.00034674652852118015,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007237281848116339,
+      "y": 0.0038208175501646124,
+      "z": 0.07480343304166581,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16585284383724996,
+      "y": -0.010478031598023851,
+      "z": -9.733659168792656,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5124381642229432,
+      "beta": 0.0014575793579897172,
+      "gamma": 0.01764518672573257,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005149627104401588,
+      "beta": 0.002383924089372158,
+      "gamma": 0.0025021093897521496,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.02883550867845841,
+      "y": -0.0063466046857563185,
+      "z": 0.060012900416097636,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.20028119625397345,
+      "y": -0.020956233359166743,
+      "z": -9.748478352776146,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5124974409752607,
+      "beta": 0.0014892592336273325,
+      "gamma": 0.017477532922807633,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0015634335577487946,
+      "beta": -0.0018107686191797256,
+      "gamma": -0.0017326076049357653,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0021731543352920824,
+      "y": 0.018551717709801352,
+      "z": 0.06357151601440592,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17109189446830975,
+      "y": 0.002844295949334885,
+      "z": -9.744885823325603,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5123406124455363,
+      "beta": 0.001601164859984361,
+      "gamma": 0.01766302562178922,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005108555778861046,
+      "beta": 0.0024146828800439835,
+      "gamma": 0.0003564446233212948,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.010767465359098338,
+      "y": 0.002199722622549416,
+      "z": 0.0580552525319149,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16121245675186557,
+      "y": -0.013920833492293005,
+      "z": -9.750424306228524,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5122747196913293,
+      "beta": 0.001643278565674867,
+      "gamma": 0.017532003180690838,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0006038304418325424,
+      "beta": -0.000813185703009367,
+      "gamma": -0.0018354698549956083,
+    },
+  },
+]
+Array [
+  Object {
+    "acceleration": Object {
+      "x": -0.003546884621403734,
+      "y": -0.01880165878081197,
+      "z": 0.06490292707542267,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17079262664939598,
+      "y": -0.03263196891987885,
+      "z": -9.74353862478165,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5123833069179466,
+      "beta": 0.0014098180076383773,
+      "gamma": 0.01777256466496333,
+    },
+    "rotationRate": Object {
+      "alpha": 0.001499151811003685,
+      "beta": 0.0012590941041707993,
+      "gamma": 0.00034674652852118015,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.007237281848116339,
+      "y": 0.0038208175501646124,
+      "z": 0.07480343304166581,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16585284383724996,
+      "y": -0.010478031598023851,
+      "z": -9.733659168792656,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5124381642229432,
+      "beta": 0.0014575793579897172,
+      "gamma": 0.01764518672573257,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005149627104401588,
+      "beta": 0.002383924089372158,
+      "gamma": 0.0025021093897521496,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": 0.02883550867845841,
+      "y": -0.0063466046857563185,
+      "z": 0.060012900416097636,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.20028119625397345,
+      "y": -0.020956233359166743,
+      "z": -9.748478352776146,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5124974409752607,
+      "beta": 0.0014892592336273325,
+      "gamma": 0.017477532922807633,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0015634335577487946,
+      "beta": -0.0018107686191797256,
+      "gamma": -0.0017326076049357653,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.0021731543352920824,
+      "y": 0.018551717709801352,
+      "z": 0.06357151601440592,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.17109189446830975,
+      "y": 0.002844295949334885,
+      "z": -9.744885823325603,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5123406124455363,
+      "beta": 0.001601164859984361,
+      "gamma": 0.01766302562178922,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005108555778861046,
+      "beta": 0.0024146828800439835,
+      "gamma": 0.0003564446233212948,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.010767465359098338,
+      "y": 0.002199722622549416,
+      "z": 0.0580552525319149,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.16121245675186557,
+      "y": -0.013920833492293005,
+      "z": -9.750424306228524,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5122747196913293,
+      "beta": 0.001643278565674867,
+      "gamma": 0.017532003180690838,
+    },
+    "rotationRate": Object {
+      "alpha": -0.0006038304418325424,
+      "beta": -0.000813185703009367,
+      "gamma": -0.0018354698549956083,
+    },
+  },
+  Object {
+    "acceleration": Object {
+      "x": -0.02134632146023918,
+      "y": -0.000722606250260327,
+      "z": 0.06944504438854437,
+    },
+    "accelerationIncludingGravity": Object {
+      "x": 0.14983604040161325,
+      "y": -0.017213970642177667,
+      "z": -9.73904796296847,
+    },
+    "orientation": 0,
+    "rotation": Object {
+      "alpha": 1.5122484204557032,
+      "beta": 0.001681077582134566,
+      "gamma": 0.017450692055463183,
+    },
+    "rotationRate": Object {
+      "alpha": 0.0005459897220134735,
+      "beta": 0.00024495087563991547,
+      "gamma": 0.0024604659993201494,
+    },
+  },
+]
+Finished building JavaScript bundle in 56ms.
+Running application "main" with appParams: {"rootTag":71,"initialProps":{"exp":{"manifest":{"splash":{"resizeMode":"contain","image":"./assets/splash.png","backgroundColor":"#ffffff","imageUrl":"http://10.150.224.118:19001/assets/./assets/splash.png"},"developer":{"projectRoot":"/Users/michaeltang/Documents/wambam/proj","tool":"expo-cli"},"loadedFromCache":false,"privacy":"public","logUrl":"http://10.150.224.118:19000/logs","orientation":"portrait","sdkVersion":"32.0.0","mainModuleName":"node_modules/expo/AppEntry","env":{},"platforms":["ios","android"],"xde":true,"id":"@anonymous/proj-886a3fc8-21e6-433e-8c1c-157cba991cdf","hostUri":"10.150.224.118:19000","iconUrl":"http://10.150.224.118:19001/assets/./assets/icon.png","assetBundlePatterns":["**/*"],"name":"slep","slug":"proj","debuggerHost":"10.150.224.118:19001","icon":"./assets/icon.png","isVerified":false,"packagerOpts":{"lanType":"ip","dev":true,"minify":false,"urlRandomness":"d3-cru","hostType":"lan"},"ios":{"supportsTablet":true},"updates":{"fallbackToCacheTimeout":0},"bundleUrl":"http://10.150.224.118:19001/node_modules/expo/AppEntry.bundle?platform=ios&dev=true&minify=false&hot=false&assetPlugin=%2FUsers%2Fmichaeltang%2FDocuments%2Fwambam%2Fproj%2Fnode_modules%2Fexpo%2Ftools%2FhashAssetFiles.js","version":"1.0.0"},"initialUri":"exp://10.150.224.118:19000","appOwnership":"expo","shell":0}}}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+Array []
+
+
+Finished building JavaScript bundle in 139ms.
+Running application "main" with appParams: {"rootTag":81,"initialProps":{"exp":{"manifest":{"splash":{"resizeMode":"contain","image":"./assets/splash.png","backgroundColor":"#ffffff","imageUrl":"http://10.150.224.118:19001/assets/./assets/splash.png"},"developer":{"projectRoot":"/Users/michaeltang/Documents/wambam/proj","tool":"expo-cli"},"loadedFromCache":false,"privacy":"public","logUrl":"http://10.150.224.118:19000/logs","orientation":"portrait","sdkVersion":"32.0.0","mainModuleName":"node_modules/expo/AppEntry","env":{},"platforms":["ios","android"],"xde":true,"id":"@anonymous/proj-886a3fc8-21e6-433e-8c1c-157cba991cdf","hostUri":"10.150.224.118:19000","iconUrl":"http://10.150.224.118:19001/assets/./assets/icon.png","assetBundlePatterns":["**/*"],"name":"slep","slug":"proj","debuggerHost":"10.150.224.118:19001","icon":"./assets/icon.png","isVerified":false,"packagerOpts":{"lanType":"ip","dev":true,"minify":false,"urlRandomness":"d3-cru","hostType":"lan"},"ios":{"supportsTablet":true},"updates":{"fallbackToCacheTimeout":0},"bundleUrl":"http://10.150.224.118:19001/node_modules/expo/AppEntry.bundle?platform=ios&dev=true&minify=false&hot=false&assetPlugin=%2FUsers%2Fmichaeltang%2FDocuments%2Fwambam%2Fproj%2Fnode_modules%2Fexpo%2Ftools%2FhashAssetFiles.js","version":"1.0.0"},"initialUri":"exp://10.150.224.118:19000","appOwnership":"expo","shell":0}}}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+Array []
+
+
+
+Finished building JavaScript bundle in 162ms.
+Running application "main" with appParams: {"rootTag":91,"initialProps":{"exp":{"manifest":{"splash":{"resizeMode":"contain","image":"./assets/splash.png","backgroundColor":"#ffffff","imageUrl":"http://10.150.224.118:19001/assets/./assets/splash.png"},"developer":{"projectRoot":"/Users/michaeltang/Documents/wambam/proj","tool":"expo-cli"},"loadedFromCache":false,"privacy":"public","logUrl":"http://10.150.224.118:19000/logs","orientation":"portrait","sdkVersion":"32.0.0","mainModuleName":"node_modules/expo/AppEntry","env":{},"platforms":["ios","android"],"xde":true,"id":"@anonymous/proj-886a3fc8-21e6-433e-8c1c-157cba991cdf","hostUri":"10.150.224.118:19000","iconUrl":"http://10.150.224.118:19001/assets/./assets/icon.png","assetBundlePatterns":["**/*"],"name":"slep","slug":"proj","debuggerHost":"10.150.224.118:19001","icon":"./assets/icon.png","isVerified":false,"packagerOpts":{"lanType":"ip","dev":true,"minify":false,"urlRandomness":"d3-cru","hostType":"lan"},"ios":{"supportsTablet":true},"updates":{"fallbackToCacheTimeout":0},"bundleUrl":"http://10.150.224.118:19001/node_modules/expo/AppEntry.bundle?platform=ios&dev=true&minify=false&hot=false&assetPlugin=%2FUsers%2Fmichaeltang%2FDocuments%2Fwambam%2Fproj%2Fnode_modules%2Fexpo%2Ftools%2FhashAssetFiles.js","version":"1.0.0"},"initialUri":"exp://10.150.224.118:19000","appOwnership":"expo","shell":0}}}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+Array []
+
+
+
+
+Finished building JavaScript bundle in 194ms.
+Running application "main" with appParams: {"rootTag":101,"initialProps":{"exp":{"manifest":{"splash":{"resizeMode":"contain","image":"./assets/splash.png","backgroundColor":"#ffffff","imageUrl":"http://10.150.224.118:19001/assets/./assets/splash.png"},"developer":{"projectRoot":"/Users/michaeltang/Documents/wambam/proj","tool":"expo-cli"},"loadedFromCache":false,"privacy":"public","logUrl":"http://10.150.224.118:19000/logs","orientation":"portrait","sdkVersion":"32.0.0","mainModuleName":"node_modules/expo/AppEntry","env":{},"platforms":["ios","android"],"xde":true,"id":"@anonymous/proj-886a3fc8-21e6-433e-8c1c-157cba991cdf","hostUri":"10.150.224.118:19000","iconUrl":"http://10.150.224.118:19001/assets/./assets/icon.png","assetBundlePatterns":["**/*"],"name":"slep","slug":"proj","debuggerHost":"10.150.224.118:19001","icon":"./assets/icon.png","isVerified":false,"packagerOpts":{"lanType":"ip","dev":true,"minify":false,"urlRandomness":"d3-cru","hostType":"lan"},"ios":{"supportsTablet":true},"updates":{"fallbackToCacheTimeout":0},"bundleUrl":"http://10.150.224.118:19001/node_modules/expo/AppEntry.bundle?platform=ios&dev=true&minify=false&hot=false&assetPlugin=%2FUsers%2Fmichaeltang%2FDocuments%2Fwambam%2Fproj%2Fnode_modules%2Fexpo%2Ftools%2FhashAssetFiles.js","version":"1.0.0"},"initialUri":"exp://10.150.224.118:19000","appOwnership":"expo","shell":0}}}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+Array []
+
+
+
+
+
+Stopping packager...
+Packager stopped.
