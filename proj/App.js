@@ -10,6 +10,7 @@ export default class Sensors extends React.Component {
         this.state = {
             // array of data points captured from on-board sensors
             motionData: [],
+            status: false,
         };
     }
 
@@ -24,15 +25,19 @@ export default class Sensors extends React.Component {
     _toggle = () => {
         if (this.subscription) {
             this._unsubscribe();
+            console.log('toggle off');
+            this.setState({status: false});
         } else {
             this._subscribe();
+            console.log('toggle on');
+            this.setState({status: true});
         }
     };
 
     _subscribe = () => {
         this.subscription = DeviceMotion.addListener(motionData => {
             // rate at which sensors update (in ms)
-            DeviceMotion.setUpdateInterval(1000);
+            DeviceMotion.setUpdateInterval(100);
             // append most recent motion data to past data
             let tmp = this.state.motionData.concat(motionData);
             this.setState({motionData: tmp});
@@ -64,10 +69,11 @@ export default class Sensors extends React.Component {
                 justifyContent: 'center',
                 marginBottom: 50,
             }}>
-                {/*<Text> {JSON.stringify(this.state.motionData)}{'\n'}{'\n'}</Text>*/}
-                {/*<TouchableOpacity onPress={this._toggle}*/}
-                {/*<Text>Toggle</Text>*/}
-                {/*</TouchableOpacity>*/}
+                {/*<Text> {JSON.stringify(this.state.motionData)}{'\n'}{'\n'} </Text>*/}
+                <Text> {JSON.stringify(this.state.status)} </Text>
+                <TouchableOpacity onPress={this._toggle}>
+                    <Text>Toggle</Text>
+                </TouchableOpacity>
             </View>
         );
     }
