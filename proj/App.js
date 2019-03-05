@@ -1,95 +1,56 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {Accelerometer, Gyroscope} from 'expo';
-import TimerMixin from 'react-timer-mixin';
+import {DeviceMotion} from 'expo-sensors';
 
 export default class Sensors extends React.Component {
-    state = {
-        accelerometerData: {},
-        gyroscopeData: {},
-        data: [0],
+    constructor(props) {
+        super(props);
+        this.state = {
+            // array of data points captured from on-board sensors
+            motionData: [],
+        };
     }
-
-    mixins: [TimerMixin];
 
     componentDidMount() {
         this._toggle();
-        this.update = this.update.bind(this);
-        this.add = setInterval(() => {this.update();}, 100);
-        this.processdata = this.processdata.bind(this);
-        this.interval = setInterval(() => {this.processdata();}, 1000);
     }
 
     componentWillUnmount() {
         this._unsubscribe();
-        clearInterval(this.add);
-        clearInterval(this.interval);
-
     }
 
     _toggle = () => {
-        Accelerometer.setUpdateInterval(100);
-        Gyroscope.setUpdateInterval(100);
-
-        if (this._acclsubscription) {
+        if (this._subscribe()) {
             this._unsubscribe();
         } else {
             this._subscribe();
         }
-    }
+    };
 
     _subscribe = () => {
-        this._acclsubscription = Accelerometer.addListener(accelerometerData => {
-            this.setState({accelerometerData});
-        });
-        this._gyrosubscription = Gyroscope.addListener(gyroscopeData => {
-            this.setState({gyroscopeData});
-        });
-    }
-
-    //adds accelerometer data to dataset
-    update() {
-      let {x, y, z} = this.state.accelerometerData;
-      let {gx, gy, gz} = this.state.gyroscopeData;
-      var currdata = {
-        "ax": x, "ay": y, "az": z, "gx": gx, "gy": gy, "gz": gz
-      };
-      var temparr = this.state.data.slice();
-      temparr.push(currdata);
-      this.setState({data: temparr});
-      console.log(`gx data: ${currdata['gx']}`);
-    }
-
-    //processes cumulative dataset to determine whether user is exercising or not, every second
-    processdata() {
-      console.log("i'm processing!");
-      //Calculate standard deviation of accl and gyro dataset
-      //data SCIENCe! train on datasets where we're still vs not still
-
-    }
+        this.subscription = DeviceMotion.addListener(motionData => {
+            // rate at which sensors update (in ms)
+            DeviceMotion.setUpdateInterval(5000);
+            // append most recent motion data to past data
+            let tmp = this.state.motionData.concat(motionData);
+            this.setState({motionData: tmp});
+        })
+    };
 
     _unsubscribe = () => {
-        this._acclsubscription && this._acclsubscription.remove();
-        this._gyrosubscription && this._gyrosubscription.remove();
-        this._acclsubscription = null;
-        this._gyrosubscription = null;
-    }
+        this.subscription && this.subscription.remove();
+        this.subscription = null;
+    };
 
     render() {
-        let {x, y, z} = this.state.accelerometerData;
-        let {gx, gy, gz} = this.state.gyroscopeData;
+        console.log(this.state.motionData);
         return (
             <View style={{
                 flex: 1,
-                flexDirection: 'column',
+                alignItems: 'center',
                 justifyContent: 'center',
             }}>
-                <Text>x: {round(x)}{"\n"}</Text>
-                <Text>y: {round(y)}{"\n"}</Text>
-                <Text>z: {round(z)}{"\n\n"}</Text>
-                <Text>x: {round(gx)}{"\n"}</Text>
-                <Text>y: {round(gy)}{"\n"}</Text>
-                <Text>z: {round(gz)}{"\n\n"}</Text>
+                <Text>: {JSON.stringify(this.state.motionData)}{'\n'}{'\n'}</Text>
                 <TouchableOpacity onPress={this._toggle}>
                     <Text>Toggle</Text>
                 </TouchableOpacity>
@@ -98,9 +59,10 @@ export default class Sensors extends React.Component {
     }
 }
 
-function round(n) {
-    if (!n) {
-        return 0;
-    }
-    return Math.floor(n * 10000) / 10000;
-}
+// //processes cumulative dataset to determine whether user is exercising or not, every second
+// processdata() {
+//   console.log("i'm processing!");
+//   //Calculate standard deviation of accl and gyro dataset
+//   //data SCIENCe! train on datasets where we're still vs not still
+//
+// }
