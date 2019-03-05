@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {DeviceMotion} from 'expo-sensors';
-import { FileSystem } from 'expo';
+//import { FileSystem } from 'expo';
 
 
 export default class Sensors extends React.Component {
@@ -42,15 +42,15 @@ export default class Sensors extends React.Component {
     _unsubscribe = () => {
         this.subscription && this.subscription.remove();
         this.subscription = null;
-
+        /*console.log(FileSystem.documentDirectory)
         var path = FileSystem.documentDirectory + '/test.txt';
-        FileSystem.writeAsStringAsync(path, this.state.motionData, 'utf8').then((success) => {
+        FileSystem.writeAsStringAsync(path, this.state.motionData).then((success) => {
             console.log('FILE WRITTEN!');
         })
         .catch((err) => {
             console.log("F");
             console.log(err.message);
-        });
+        });*/
         //file.write JSON.stringify(this.state.motionData)
         this.setState({motionData: []})
     };
@@ -64,7 +64,7 @@ export default class Sensors extends React.Component {
                 justifyContent: 'center',
                 marginBottom: 50,
             }}>
-                <Text>: {JSON.stringify(this.state.motionData)}{'\n'}{'\n'}</Text>
+                // <Text>: {JSON.stringify(this.state.motionData)}{'\n'}{'\n'}</Text>
                 <TouchableOpacity onPress={this._toggle}>
                     <Text>Toggle</Text>
                 </TouchableOpacity>
