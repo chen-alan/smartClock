@@ -1,5 +1,6 @@
-import numpy as np, pandas as pd, json, os, re
+import numpy as np, pandas as pd, json, os, re, argparse
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.externals import joblib
 
 def makedf(data, act):
     xAccl, yAccl, zAccl, xGyro, yGyro, zGyro, xMag, yMag, zMag = ([] for _ in range(9))
@@ -20,22 +21,46 @@ def makedf(data, act):
                 'zGmean':np.mean(zGyro), 'zGstd': np.std(zGyro), 'class': [act for _ in range(len(arr))]}
     return tracedata
 
+def rforestfit():
+	newModel = True
+	if 'moveclass.pkl' in os.listdir():
+		rfc = joblib.load('moveclass.pkl')
+		newModel = False
+	else:
+		rfc = RandomForestClassifier()
+		dat = {'xAmean':[], 'xAstd': [], 'xAmax': [], 'xAmin': [],
+				'yAmean':[], 'yAstd': [], 'yAmax': [], 'yAmin': [],
+            	'zAmean':[], 'zAstd': [], 'zAmax':[], 'zAmin': [],
+            	'xGmean':[], 'xGstd': [], 
+            	'yGmean':[], 'yGstd': [], 
+            	'zGmean':[], 'zGstd': [], 'class': []}
+		for file in re.match(r'dat.*\.json',' '.join(os.listdir())).group():
+			act = re.search(r'-\w*-').group().strip('-')
+			with f as open(file,'r'):
+				rawdat = json.loads(f.read())
+			dat1 = makedf(rawdat,act)
+			for key in dat1.keys():
+				dat[key].extend(dat1[key])
+		df = pd.DataFrame(dat)
+		y = df['class']
+		X = df.iloc[:,:-1]
+		rfc.fit(X,y)
+		joblib.dump(rfc, 'moveclass.pkl')
+	return (rfc, newModel)
+
+def main(filedir):
+	rfc = rforestfit()
+	if rfc[1]==True:
+		return "Model ready"
+	with f as open(filedir,'r+'):
+		dat = json.loads(f.read())
+		df = pd.DataFrame(dat)
+	df['class'] = rfc[0].predict(df)
+	return df
+
 if __name__ == "__main__":
-	rfc = RandomForestClassifier(warm_start = True)
-	dat = {'xAmean':[], 'xAstd': [], 'xAmax': [], 'xAmin': [],
-			'yAmean':[], 'yAstd': [], 'yAmax': [], 'yAmin': [],
-            'zAmean':[], 'zAstd': [], 'zAmax':[], 'zAmin': [],
-            'xGmean':[], 'xGstd': [], 
-            'yGmean':[], 'yGstd': [], 
-            'zGmean':[], 'zGstd': [], 'class': []}
-	for file in re.match(r'dat.*\.json',' '.join(os.listdir())).group():
-		act = re.search(r'-\w*-').group().strip('-')
-		with f as open(file,'r'):
-			rawdat = json.loads(f.read())
-		dat1 = makedf(rawdat)
-		for key in dat1.keys():
-			dat[key].extend(dat1[key])
-	df = pd.DataFrame(dat)
-	y = df['class']
-	X = df.iloc[:,:-1]
-	rfc.fit(X,y)
+	parser = argparse.ArgumentParser()
+	parser.addArgument('datadir', type=str)
+	args = parser.parse_args()
+	filedir = vars(args)['datadir']
+	return main(filedir)
