@@ -5,16 +5,16 @@ from sklearn.externals import joblib
 def makedat(data, act):
     xAccl, yAccl, zAccl, xRot, yRot, zRot, xRotVel, yRotVel, zRotVel = ([] for _ in range(9))
     vals = [xAccl, yAccl, zAccl, xRot, yRot, zRot, xRotVel, yRotVel, zRotVel]
-    for x in range(len(arr)):
-        xAccl.append(arr[x]['acceleration']['x'])
-        yAccl.append(arr[x]['acceleration']['y'])
-        zAccl.append(arr[x]['acceleration']['z'])
-        xRot.append(arr[x]['rotation']['beta'])
-        yRot.append(arr[x]['rotation']['gamma'])
-        zRot.append(arr[x]['rotation']['alpha'])
-        xRotVel.append(arr[x]['rotationRate']['beta'])
-        yRotVel.append(arr[x]['rotationRate']['gamma'])
-        zRotVel.append(arr[x]['rotationRate']['alpha'])
+    for x in range(len(data)):
+        xAccl.append(data[x]['acceleration']['x'])
+        yAccl.append(data[x]['acceleration']['y'])
+        zAccl.append(data[x]['acceleration']['z'])
+        xRot.append(data[x]['rotation']['beta'])
+        yRot.append(data[x]['rotation']['gamma'])
+        zRot.append(data[x]['rotation']['alpha'])
+        xRotVel.append(data[x]['rotationRate']['beta'])
+        yRotVel.append(data[x]['rotationRate']['gamma'])
+        zRotVel.append(data[x]['rotationRate']['alpha'])
     #for xAccl
     tracedata = {'xAmean':np.mean(xAccl), 'xAstd': np.std(xAccl), 'xAmax': np.max(xAccl), 'xAmin': np.min(xAccl),
                 'yAmean':np.mean(xAccl), 'yAstd': np.std(yAccl), 'yAmax': np.max(yAccl), 'yAmin': np.min(yAccl),
@@ -24,7 +24,7 @@ def makedat(data, act):
                 'zRmean':np.mean(zRot), 'zRstd': np.std(zRot),
                 'xRVmean':np.mean(xRotVel), 'xRVstd': np.std(xRotVel), 
                 'yRVmean':np.mean(yRotVel), 'yRVstd': np.std(yRotVel), 
-                'zRVmean':np.mean(zRotVel), 'zRVstd': np.std(zRotVel), 'class': [act for _ in range(len(arr))]}
+                'zRVmean':np.mean(zRotVel), 'zRVstd': np.std(zRotVel), 'class': act}
     return tracedata
 
 def rforestfit(new):
@@ -43,13 +43,13 @@ def rforestfit(new):
             	'xRVmean':[], 'xRVstd': [], 
             	'yRVmean':[], 'yRVstd': [], 
             	'zRVmean':[], 'zRVstd': [], 'class': []}
-		for file in re.search(r'dat-\w*\.json',' '.join(os.listdir())).group():
+		for file in re.findall(r'dat-\w*\.json',' '.join(os.listdir())):
 			act = re.search(r'-\w*\.',file).group()[1:-1]
 			with open(file,'r') as f:
 				rawdat = json.loads(f.read())
 			dat1 = makedat(rawdat,act)
 			for key in dat1.keys():
-				dat[key].extend(dat1[key])
+				dat[key].append(dat1[key])
 		df = pd.DataFrame(dat)
 		y = df['class']
 		X = df.iloc[:,:-1]
