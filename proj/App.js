@@ -57,11 +57,11 @@ export default class Sensors extends React.Component {
             console.log(err.message);
         });*/
         //file.write JSON.stringify(this.state.motionData)
+        console.log(JSON.stringify(this.state.motionData))
         this.setState({motionData: []})
     };
 
     render() {
-        console.log(this.state.motionData);
         return (
             <View style={{
                 flex: 1,

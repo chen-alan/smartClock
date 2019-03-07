@@ -36,7 +36,7 @@ def rforestfit():
             	'zGmean':[], 'zGstd': [], 'class': []}
 		for file in re.match(r'dat.*\.json',' '.join(os.listdir())).group():
 			act = re.search(r'-\w*-').group().strip('-')
-			with f as open(file,'r'):
+			with open(file,'r') as f:
 				rawdat = json.loads(f.read())
 			dat1 = makedf(rawdat,act)
 			for key in dat1.keys():
@@ -52,7 +52,7 @@ def main(filedir):
 	rfc = rforestfit()
 	if rfc[1]==True:
 		return "Model ready"
-	with f as open(filedir,'r+'):
+	with open(filedir,'r+') as f:
 		dat = json.loads(f.read())
 		df = pd.DataFrame(dat)
 	df['class'] = rfc[0].predict(df)
