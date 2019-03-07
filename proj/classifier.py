@@ -3,22 +3,28 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.externals import joblib
 
 def makedat(data, act):
-    xAccl, yAccl, zAccl, xGyro, yGyro, zGyro, xMag, yMag, zMag = ([] for _ in range(9))
-    vals = [xAccl, yAccl, zAccl, xGyro, yGyro, zGyro, xMag, yMag, zMag]
+    xAccl, yAccl, zAccl, xRot, yRot, zRot, xRotVel, yRotVel, zRotVel = ([] for _ in range(9))
+    vals = [xAccl, yAccl, zAccl, xRot, yRot, zRot, xRotVel, yRotVel, zRotVel]
     for x in range(len(arr)):
-        xAccl.append(arr[x]['xAccl'])
-        yAccl.append(arr[x]['yAccl'])
-        zAccl.append(arr[x]['zAccl'])
-        xGyro.append(arr[x]['xGyro'])
-        yGyro.append(arr[x]['yGyro'])
-        zGyro.append(arr[x]['zGyro'])
+        xAccl.append(arr[x]['acceleration']['x'])
+        yAccl.append(arr[x]['acceleration']['y'])
+        zAccl.append(arr[x]['acceleration']['z'])
+        xRot.append(arr[x]['rotation']['beta'])
+        yRot.append(arr[x]['rotation']['gamma'])
+        zRot.append(arr[x]['rotation']['alpha'])
+        xRotVel.append(arr[x]['rotationRate']['beta'])
+        yRotVel.append(arr[x]['rotationRate']['gamma'])
+        zRotVel.append(arr[x]['rotationRate']['alpha'])
     #for xAccl
     tracedata = {'xAmean':np.mean(xAccl), 'xAstd': np.std(xAccl), 'xAmax': np.max(xAccl), 'xAmin': np.min(xAccl),
                 'yAmean':np.mean(xAccl), 'yAstd': np.std(yAccl), 'yAmax': np.max(yAccl), 'yAmin': np.min(yAccl),
                 'zAmean':np.mean(zAccl), 'zAstd': np.std(zAccl), 'zAmax':np.max(zAccl), 'zAmin': np.min(zAccl),
-                'xGmean':np.mean(xGyro), 'xGstd': np.std(xGyro), 
-                'yGmean':np.mean(yGyro), 'yGstd': np.std(yGyro), 
-                'zGmean':np.mean(zGyro), 'zGstd': np.std(zGyro), 'class': [act for _ in range(len(arr))]}
+                'xRmean':np.mean(xRot), 'xRstd': np.std(xRot), 
+                'yRmean':np.mean(yRot), 'yRstd': np.std(yRot), 
+                'zRmean':np.mean(zRot), 'zRstd': np.std(zRot),
+                'xRVmean':np.mean(xRotVel), 'xRVstd': np.std(xRotVel), 
+                'yRVmean':np.mean(yRotVel), 'yRVstd': np.std(yRotVel), 
+                'zRVmean':np.mean(zRotVel), 'zRVstd': np.std(zRotVel), 'class': [act for _ in range(len(arr))]}
     return tracedata
 
 def rforestfit(new):
@@ -31,10 +37,12 @@ def rforestfit(new):
 		dat = {'xAmean':[], 'xAstd': [], 'xAmax': [], 'xAmin': [],
 				'yAmean':[], 'yAstd': [], 'yAmax': [], 'yAmin': [],
             	'zAmean':[], 'zAstd': [], 'zAmax':[], 'zAmin': [],
-            	'xGmean':[], 'xGstd': [], 
-            	'yGmean':[], 'yGstd': [], 
-            	'zGmean':[], 'zGstd': [], 'class': []}
-		print(' '.join(os.listdir()))
+            	'xRmean':[], 'xRstd': [], 
+            	'yRmean':[], 'yRstd': [], 
+            	'zRmean':[], 'zRstd': [],
+            	'xRVmean':[], 'xRVstd': [], 
+            	'yRVmean':[], 'yRVstd': [], 
+            	'zRVmean':[], 'zRVstd': [], 'class': []}
 		for file in re.search(r'dat-\w*\.json',' '.join(os.listdir())).group():
 			act = re.search(r'-\w*\.',file).group()[1:-1]
 			with open(file,'r') as f:
@@ -69,6 +77,7 @@ def main():
 		dat = json.loads(f.read())
 	df = pd.DataFrame(makedat(dat, act))
 	df['class'] = rfc[0].predict(df)
+	print(df['class'])
 	return df
 
 if __name__ == "__main__":
