@@ -16,7 +16,7 @@ def makedat(data, act=None):
 		yRotVel.append(data[x]['rotationRate']['gamma'])
 		zRotVel.append(data[x]['rotationRate']['alpha'])
 	#for xAccl
-	tracedata = {'xAmean':np.mean(xAccl), 'xAstd': np.std(xAccl), 'xAmax': np.max(xAccl), 'xAmin': np.min(xAccl),
+	"""tracedata = {'xAmean':np.mean(xAccl), 'xAstd': np.std(xAccl), 'xAmax': np.max(xAccl), 'xAmin': np.min(xAccl),
 				'yAmean':np.mean(xAccl), 'yAstd': np.std(yAccl), 'yAmax': np.max(yAccl), 'yAmin': np.min(yAccl),
 				'zAmean':np.mean(zAccl), 'zAstd': np.std(zAccl), 'zAmax':np.max(zAccl), 'zAmin': np.min(zAccl),
 				'xRmean':np.mean(xRot), 'xRstd': np.std(xRot), 
@@ -24,11 +24,12 @@ def makedat(data, act=None):
 				'zRmean':np.mean(zRot), 'zRstd': np.std(zRot),
 				'xRVmean':np.mean(xRotVel), 'xRVstd': np.std(xRotVel), 
 				'yRVmean':np.mean(yRotVel), 'yRVstd': np.std(yRotVel), 
-				'zRVmean':np.mean(zRotVel), 'zRVstd': np.std(zRotVel)}
+				'zRVmean':np.mean(zRotVel), 'zRVstd': np.std(zRotVel)}"""
+	tracedata = {'xAccl':xAccl, 'yAccl':yAccl,'zAccl':zAccl,'xRot':xRot,'yRot':yRot,'zRot':zRot,'xRotVel':xRotVel,'yRotVel':yRotVel,'zRotVel':zRotVel}
 	if act != None:
-   		tracedata['class'] = 1 if 'jjack' in act else 0
-	for key in tracedata.keys():
-		tracedata[key] = [tracedata[key]]
+   		tracedata['class'] = [1 for _ in range(len(data))] if 'jjack' in act else [0 for _ in range(len(data))]
+	#for key in tracedata.keys():
+	#	tracedata[key] = [tracedata[key]]
 	return tracedata
 
 def rforestfit(new,flstb):
@@ -38,7 +39,7 @@ def rforestfit(new,flstb):
 		newModel = False
 	else:
 		rfc = RandomForestClassifier()
-		dat = {'xAmean':[], 'xAstd': [], 'xAmax': [], 'xAmin': [],
+		"""dat = {'xAmean':[], 'xAstd': [], 'xAmax': [], 'xAmin': [],
 				'yAmean':[], 'yAstd': [], 'yAmax': [], 'yAmin': [],
 				'zAmean':[], 'zAstd': [], 'zAmax':[], 'zAmin': [],
 				'xRmean':[], 'xRstd': [], 
@@ -46,7 +47,8 @@ def rforestfit(new,flstb):
 				'zRmean':[], 'zRstd': [],
 				'xRVmean':[], 'xRVstd': [], 
 				'yRVmean':[], 'yRVstd': [], 
-				'zRVmean':[], 'zRVstd': [], 'class': []}
+				'zRVmean':[], 'zRVstd': [], 'class': []}"""
+		dat = {'xAccl':[], 'yAccl':[],'zAccl':[],'xRot':[],'yRot':[],'zRot':[],'xRotVel':[],'yRotVel':[],'zRotVel':[],'class':[]}
 		for file in re.findall(r'dat-[\w\d]*\.json',' '.join(os.listdir('data'))):
 			if flstb and file == flstb:
 				continue
@@ -57,6 +59,7 @@ def rforestfit(new,flstb):
 			for key in dat1.keys():
 				dat[key].extend(dat1[key])
 		df = pd.DataFrame(dat)
+		print(df)
 		y = df['class']
 		X = df.iloc[:,:-1]
 		rfc.fit(X,y)
@@ -83,9 +86,12 @@ def main():
 	act = re.search(r'-\w*\.',filedir).group()[1:-1]
 	with open('data/'+filedir,'r+') as f:
 		dat = json.loads(f.read())
-	df = pd.DataFrame(makedat(dat))
+	df = pd.DataFrame(makedat(dat,act))
+	trueclass = df['class']
+	df.drop(columns=['class'],inplace=True)
 	df['class'] = rfc[0].predict(df)
-	print(df['class'])
+	df['accurate'] = df['class']==trueclass
+	print(df[df['accurate']==True]['accurate'].count()/df['accurate'].count())
 	return df
 
 if __name__ == "__main__":
