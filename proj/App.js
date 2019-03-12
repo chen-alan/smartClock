@@ -1,17 +1,24 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+    Text,
+    View,
+    StyleSheet,
+    DatePickerIOS,
+    TouchableOpacity,
+} from 'react-native';
 import {DeviceMotion} from 'expo-sensors';
-//import { FileSystem } from 'expo';
 
 
 export default class Sensors extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            // array of data points captured from on-board sensors
-            motionData: [],
-            status: false,
+            status: false, // data capture on/off toggle
+            motionData: [], // array of data points captured from phone sensors
+            alarm: new Date()
         };
+
+        this._setDate = this._setDate.bind(this)
     }
 
     componentDidMount() {
@@ -38,6 +45,7 @@ export default class Sensors extends React.Component {
         this.subscription = DeviceMotion.addListener(motionData => {
             // rate at which sensors update (in ms)
             DeviceMotion.setUpdateInterval(100);
+
             // append most recent motion data to past data
             let tmp = this.state.motionData.concat(motionData);
             this.setState({motionData: tmp});
@@ -47,30 +55,24 @@ export default class Sensors extends React.Component {
     _unsubscribe = () => {
         this.subscription && this.subscription.remove();
         this.subscription = null;
-        /*console.log(FileSystem.documentDirectory)
-        var path = FileSystem.documentDirectory + '/test.txt';
-        FileSystem.writeAsStringAsync(path, this.state.motionData).then((success) => {
-            console.log('FILE WRITTEN!');
-        })
-        .catch((err) => {
-            console.log("F");
-            console.log(err.message);
-        });*/
-        //file.write JSON.stringify(this.state.motionData)
+
         console.log(JSON.stringify(this.state.motionData))
+
         this.setState({motionData: []})
     };
 
+    _setDate(newDate) {
+        this.setState({alarm: newDate})
+    }
+
     render() {
         return (
-            <View style={{
-                flex: 1,
-                alignItems: 'center',
-                justifyContent: 'center',
-                marginBottom: 50,
-            }}>
-                {/*<Text> {JSON.stringify(this.state.motionData)}{'\n'}{'\n'} </Text>*/}
-                <Text> {JSON.stringify(this.state.status)} </Text>
+            <View style={styles.container}>
+                <DatePickerIOS
+                    date={this.state.alarm}
+                    onDateChange={this._setDate}
+                    mode={'time'}
+                />
                 <TouchableOpacity onPress={this._toggle}>
                     <Text>Toggle</Text>
                 </TouchableOpacity>
@@ -78,6 +80,13 @@ export default class Sensors extends React.Component {
         );
     }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center'
+  },
+})
 
 // //processes cumulative dataset to determine whether user is exercising or not, every second
 // processdata() {
