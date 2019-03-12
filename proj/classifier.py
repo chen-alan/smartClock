@@ -26,12 +26,12 @@ def makedat(data, act=None):
 				'yRVmean':np.mean(yRotVel), 'yRVstd': np.std(yRotVel), 
 				'zRVmean':np.mean(zRotVel), 'zRVstd': np.std(zRotVel)}
 	if act != None:
-   		tracedata['class'] = act
+   		tracedata['class'] = 1 if 'jjack' in act else 0
 	for key in tracedata.keys():
 		tracedata[key] = [tracedata[key]]
 	return tracedata
 
-def rforestfit(new):
+def rforestfit(new,flstb):
 	newModel = True
 	if new==0 and 'moveclass.pkl' in os.listdir():
 		rfc = joblib.load('moveclass.pkl')
@@ -47,11 +47,13 @@ def rforestfit(new):
 				'xRVmean':[], 'xRVstd': [], 
 				'yRVmean':[], 'yRVstd': [], 
 				'zRVmean':[], 'zRVstd': [], 'class': []}
-		for file in re.findall(r'dat-\w*\.json',' '.join(os.listdir())):
-			act = re.search(r'-\w*\.',file).group()[1:-1]
-			with open(file,'r') as f:
+		for file in re.findall(r'dat-[\w\d]*\.json',' '.join(os.listdir('data'))):
+			if flstb and file == flstb:
+				continue
+			act = re.search(r'-[\w\d]*\.',file).group()[1:-1]
+			with open('data/'+file,'r') as f:
 				rawdat = json.loads(f.read())
-			dat1 = makedat(rawdat,act=1)
+			dat1 = makedat(rawdat,act=act)
 			for key in dat1.keys():
 				dat[key].extend(dat1[key])
 		df = pd.DataFrame(dat)
@@ -65,7 +67,7 @@ def main():
 	#parsing arguments
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-d','--datadir', type=str)
-	parser.add_argument('-n','--newtree', type=int, choices=[0,1])
+	parser.add_argument('-n','--newtree', type=int, choices=[0,1], default=0)
 	args = vars(parser.parse_args())
 	if not args['datadir'] and not args['newtree']:
 		raise Exception('Need file for prediction if not making new tree')
@@ -73,11 +75,13 @@ def main():
 	new = args['newtree']
 
 	#fitting new model/predicting using existing one
-	rfc = rforestfit(new)
+	flstb = re.search(r'dat-\w*\.json',filedir).group() if filedir else None
+	rfc = rforestfit(new,flstb)
 	if rfc[1]==True and filedir==None:
-		return "Model ready"
+		print("Model ready")
+		return
 	act = re.search(r'-\w*\.',filedir).group()[1:-1]
-	with open(filedir,'r+') as f:
+	with open('data/'+filedir,'r+') as f:
 		dat = json.loads(f.read())
 	df = pd.DataFrame(makedat(dat))
 	df['class'] = rfc[0].predict(df)
