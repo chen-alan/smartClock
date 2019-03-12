@@ -59,7 +59,6 @@ def rforestfit(new,flstb):
 			for key in dat1.keys():
 				dat[key].extend(dat1[key])
 		df = pd.DataFrame(dat)
-		print(df)
 		y = df['class']
 		X = df.iloc[:,:-1]
 		rfc.fit(X,y)
