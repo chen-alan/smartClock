@@ -19,6 +19,7 @@ export default class Sensors extends React.Component {
             alarm_armed: false,
             alarm_ringing: false,
             alarm_offed: false,
+            collecting_data: false,
         };
 
         this._setDate = this._setDate.bind(this)
@@ -46,12 +47,14 @@ export default class Sensors extends React.Component {
 
     _subscribe = () => {
         this.subscription = DeviceMotion.addListener(motionData => {
-            // rate at which sensors update (in ms)
-            DeviceMotion.setUpdateInterval(100);
+            if (this.state.collecting_data) {
+                // rate at which sensors update (in ms)
+                DeviceMotion.setUpdateInterval(100);
 
-            // append most recent motion data to past data
-            let tmp = this.state.motionData.concat(motionData);
-            this.setState({motionData: tmp});
+                // append most recent motion data to past data
+                let tmp = this.state.motionData.concat(motionData);
+                this.setState({motionData: tmp});
+            }
 
             if (this.state.alarm_armed) {
                 let cur_date = new Date();
@@ -62,6 +65,9 @@ export default class Sensors extends React.Component {
                 const alm_min = alm_date.getUTCMinutes();
 
                 if ((cur_hrs === alm_hrs) && (cur_min === alm_min)) {
+                    // if (!this.state.collecting_data) {
+                    //     this._alarmCollect();
+                    // }
                     if (!this.state.alarm_offed) {
                         console.log("alarm ringing");
                         this._alarmRing();
@@ -77,7 +83,13 @@ export default class Sensors extends React.Component {
 
         console.log(JSON.stringify(this.state.motionData));
 
-        this.setState({motionData: []});
+        this.setState({
+            motionData: [],
+            alarm_armed: false,
+            alarm_ringing: false,
+            alarm_offed: false,
+            collecting_data: false,
+        });
     };
 
     _alarmOn = () => {
@@ -87,8 +99,7 @@ export default class Sensors extends React.Component {
     };
 
     _alarmOff = () => {
-        this.setState({alarm_armed: false});
-        this.setState({alarm_ringing: false});
+        this._unsubscribe();
         console.log("off");
     };
 
@@ -105,8 +116,22 @@ export default class Sensors extends React.Component {
         this.setState({alarm_offed: true});
     };
 
+    _alarmCollect = () => {
+        // 1) render "done" button (state prop [collecting_data])
+        this.setState({collecting_data: true});
+    };
+
+    _alarmDone = () => {
+        // 1) unrender "done" button
+        this.setState({collecting_data: false});
+        console.log("should start processing data");
+        runPyScript();
+        console.log("assume jj done");
+        this._alarmRingOff();
+        // 4) if backend return done: _alarmRingOff; else do nothing
+    };
+
     render() {
-        console.log("ALARM: ", this.state.alarm_ringing);
         return (
             <View style={styles.container}>
                 <DatePickerIOS
@@ -114,9 +139,9 @@ export default class Sensors extends React.Component {
                     onDateChange={this._setDate}
                     mode={'time'}
                 />
-                <TouchableOpacity onPress={this._toggle}>
-                    <Text>Toggle{'\n'}</Text>
-                </TouchableOpacity>
+                {/*<TouchableOpacity onPress={this._toggle}>*/}
+                {/*<Text>Toggle{'\n'}</Text>*/}
+                {/*</TouchableOpacity>*/}
 
                 <TouchableOpacity onPress={this._alarmOn}>
                     <Text>Alarm On{'\n'}</Text>
@@ -127,14 +152,48 @@ export default class Sensors extends React.Component {
                 </TouchableOpacity>
 
                 {this.state.alarm_ringing === true ?
-                    <TouchableOpacity onPress={this._alarmRingOff}>
+                    <TouchableOpacity onPress={this._alarmCollect}>
                         <Text>Ringer Off{'\n'}</Text>
+                    </TouchableOpacity>
+                    :
+                    <Text></Text>}
+
+                {this.state.collecting_data === true ?
+                    <TouchableOpacity onPress={this._alarmDone}>
+                        <Text>Done with Jumping Jacks!{'\n'}</Text>
                     </TouchableOpacity>
                     :
                     <Text></Text>}
             </View>
         );
     }
+}
+
+function makeHttpObject() {
+    try {
+        return new XMLHttpRequest();
+    } catch (error) {
+    }
+    try {
+        return new ActiveXObject("Msxml2.XMLHTTP");
+    } catch (error) {
+    }
+    try {
+        return new ActiveXObject("Microsoft.XMLHTTP");
+    } catch (error) {
+    }
+
+    throw new Error("Could not create HTTP request object.");
+}
+
+function blah() {
+    var request = makeHttpObject();
+    request.open("GET", "", true);
+    request.send(null);
+    request.onreadystatechange = function () {
+        if (request.readyState == 4)
+            alert(request.responseText);
+    };
 }
 
 const styles = StyleSheet.create({
