@@ -91,7 +91,7 @@ def main():
 	df['class'] = rfc[0].predict(df)
 	df['accurate'] = df['class']==trueclass
 	print(df[df['accurate']==True]['accurate'].count()/df['accurate'].count())
-	return df
+	return df['class'].mode().values[0]
 
 if __name__ == "__main__":
-	main()
+	print(main())
