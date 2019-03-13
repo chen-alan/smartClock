@@ -65,7 +65,28 @@ def rforestfit(new,flstb):
 		joblib.dump(rfc, 'moveclass.pkl')
 	return (rfc, newModel)
 
-def main():
+def main(new=0, filedir=None, data=None):
+	#fitting new model/predicting using existing one
+	flstb = re.search(r'dat-\w*\.json',filedir).group() if filedir else None
+	rfc = rforestfit(new,flstb)
+	if rfc[1]==True and filedir==None:
+		print("Model ready")
+		return
+	if filedir != None:
+		act = re.search(r'-\w*\.',filedir).group()[1:-1]
+		with open('data/'+filedir,'r+') as f:
+			dat = json.loads(f.read())
+		df = pd.DataFrame(makedat(dat,act))
+	else:
+		df = pd.DataFrame(data)
+	trueclass = df['class']
+	df.drop(columns=['class'],inplace=True)
+	df['class'] = rfc[0].predict(df)
+	df['accurate'] = df['class']==trueclass
+	print(df[df['accurate']==True]['accurate'].count()/df['accurate'].count())
+	return df['class'].mode().values[0]
+
+if __name__ == "__main__":
 	#parsing arguments
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-d','--datadir', type=str)
@@ -75,23 +96,4 @@ def main():
 		raise Exception('Need file for prediction if not making new tree')
 	filedir = args['datadir']
 	new = args['newtree']
-
-	#fitting new model/predicting using existing one
-	flstb = re.search(r'dat-\w*\.json',filedir).group() if filedir else None
-	rfc = rforestfit(new,flstb)
-	if rfc[1]==True and filedir==None:
-		print("Model ready")
-		return
-	act = re.search(r'-\w*\.',filedir).group()[1:-1]
-	with open('data/'+filedir,'r+') as f:
-		dat = json.loads(f.read())
-	df = pd.DataFrame(makedat(dat,act))
-	trueclass = df['class']
-	df.drop(columns=['class'],inplace=True)
-	df['class'] = rfc[0].predict(df)
-	df['accurate'] = df['class']==trueclass
-	print(df[df['accurate']==True]['accurate'].count()/df['accurate'].count())
-	return df['class'].mode().values[0]
-
-if __name__ == "__main__":
-	print(main())
+	print(main(new,filedir))
