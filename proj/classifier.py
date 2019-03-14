@@ -12,6 +12,10 @@ app = Flask(__name__)
 def main(new=0, filedir=None, data=None):
     start = time.time()
     print("in main")
+    if request.method == 'POST':
+        d = request.form.to_dict()
+        for i in d:
+            print(i)
     filedir = "dat-jjack5.json"
     print("filedir: ", filedir)
     # fitting new model/predicting using existing one

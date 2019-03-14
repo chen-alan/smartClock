@@ -125,10 +125,21 @@ export default class Sensors extends React.Component {
         // 1) unrender "done" button
         this.setState({collecting_data: false});
         console.log("should start processing data");
-        blah();
+        this._sendMotionData();
         console.log("assume jj done");
         this._alarmRingOff();
         // 4) if backend return done: _alarmRingOff; else do nothing
+    };
+
+
+    _sendMotionData = () => {
+        var request = new XMLHttpRequest();
+        request.open("POST", "http://10.150.58.135:5000", true);
+        request.send(JSON.stringify(this.state.motionData));
+        request.onreadystatechange = function () {
+            if (request.readyState == 4)
+                console.log(request.responseText);
+        };
     };
 
     render() {
@@ -165,47 +176,6 @@ export default class Sensors extends React.Component {
         );
     }
 }
-//
-// function makeHttpObject() {
-//     try {
-//         return new XMLHttpRequest();
-//     } catch (error) {
-//     }
-//     try {
-//         return new ActiveXObject("Msxml2.XMLHTTP");
-//     } catch (error) {
-//     }
-//     try {
-//         return new ActiveXObject("Microsoft.XMLHTTP");
-//     } catch (error) {
-//     }
-//
-//     throw new Error("Could not create HTTP request object.");
-// }
-
-// function blah() {
-//     var request = new XMLHttpRequest();
-//     request.open("GET", "http://127.0.0.1:5000", true);
-//     request.send(null);
-//     request.onreadystatechange = function () {
-//         if (request.readyState == 4)
-//             console.log(request.responseText);
-//     };
-//     // let xhr = new XMLHttpRequest();
-//     // xhr.open('GET', 'http://127.0.0.1:5000');
-//     // xhr.send(null);
-//     // xhr.onload = function() {
-//     //     if (xhr.status != 200) {
-//     //         console.log("not 200");
-//     //         console.log(xhr.status + ": " + xhr.statusText);
-//     //     } else {
-//     //         console.log("200");
-//     //         console.log(xhr.responseText);
-//     //     }
-//     // };
-//     //
-//     // console.log(xhr.responseText);
-// }
 
 const styles = StyleSheet.create({
     container: {
