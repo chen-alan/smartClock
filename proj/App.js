@@ -134,7 +134,7 @@ export default class Sensors extends React.Component {
 
     _sendMotionData = () => {
         var request = new XMLHttpRequest();
-        request.open("POST", "http://10.150.58.135:5000", true);
+        request.open("POST", "http://10.150.4.87:5000", true);
         request.send(JSON.stringify(this.state.motionData));
         request.onreadystatechange = function () {
             if (request.readyState == 4)

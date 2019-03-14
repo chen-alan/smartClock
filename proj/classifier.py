@@ -12,12 +12,12 @@ app = Flask(__name__)
 def main(new=0, filedir=None, data=None):
     start = time.time()
     print("in main")
-    with open('dat-act-11.json','w') as f:
+    """with open('data/dat-act18.json','w') as f:
         if request.method == 'POST':
             d = request.form.to_dict()
             for i in d:
-                f.write(i)
-    exit(1)
+                f.write(i)"""
+    filedir = 'dat-act18.json'
     print("filedir: ", filedir)
     # fitting new model/predicting using existing one
     flstb = re.search(r'dat-\w*\.json', filedir).group() if filedir else None
