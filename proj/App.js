@@ -7,7 +7,7 @@ import {
     TouchableOpacity,
 } from 'react-native';
 import {DeviceMotion} from 'expo-sensors';
-
+import {Audio} from 'expo';
 
 export default class Sensors extends React.Component {
     constructor(props) {
@@ -20,6 +20,7 @@ export default class Sensors extends React.Component {
             alarm_ringing: false,
             alarm_offed: false,
             collecting_data: false,
+            sound: null,
         };
 
         this._setDate = this._setDate.bind(this)
@@ -68,7 +69,7 @@ export default class Sensors extends React.Component {
                     // if (!this.state.collecting_data) {
                     //     this._alarmCollect();
                     // }
-                    if (!this.state.alarm_offed) {
+                    if (!this.state.alarm_offed && !this.state.alarm_ringing) {
                         console.log("alarm ringing");
                         this._alarmRing();
                     }
@@ -109,7 +110,19 @@ export default class Sensors extends React.Component {
 
     _alarmRing = () => {
         this.setState({alarm_ringing: true});
+        this._playRecording();
     };
+
+    async _playRecording() {
+        const {sound} = await Audio.Sound.createAsync(
+            require('./surprise.mp3'),
+            {
+                shouldPlay: true,
+                isLooping: true,
+            },
+        );
+        this.state.sound = sound;
+    }
 
     _alarmRingOff = () => {
         this.setState({alarm_ringing: false});
