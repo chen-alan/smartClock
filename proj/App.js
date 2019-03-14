@@ -124,6 +124,7 @@ export default class Sensors extends React.Component {
     _alarmRingOff = () => {
         this.setState({alarm_ringing: false});
         this.setState({alarm_offed: true});
+        this.state.sound.pauseAsync();
     };
 
     _alarmCollect = () => {
