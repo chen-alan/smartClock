@@ -4,8 +4,8 @@ from sklearn.externals import joblib
 from flask import Flask, render_template, redirect, url_for, request, \
     make_response
 
-
 app = Flask(__name__)
+
 
 @app.route("/", methods=['GET', 'POST'])
 def main(new=0, filedir=None, data=None):
@@ -31,7 +31,7 @@ def main(new=0, filedir=None, data=None):
     df['accurate'] = df['class'] == trueclass
     print(df[df['accurate'] == True]['accurate'].count() / df[
         'accurate'].count())
-    return df['class'].mode().values[0]
+    return str(df['class'].mode().values[0])
 
 
 def makedat(data, act=None):
@@ -127,4 +127,4 @@ if __name__ == "__main__":
     # print(main(new, filedir))
     print("start here")
     print(main(new=0, filedir="dat-jjack5.json"))
-    app.run(debug = True)
+    app.run(debug=True)
