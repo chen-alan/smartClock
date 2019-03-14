@@ -3,12 +3,14 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.externals import joblib
 from flask import Flask, render_template, redirect, url_for, request, \
     make_response
+import time
 
 app = Flask(__name__)
 
 
 @app.route("/", methods=['GET', 'POST'])
 def main(new=0, filedir=None, data=None):
+    start = time.time()
     print("in main")
     filedir = "dat-jjack5.json"
     print("filedir: ", filedir)
@@ -31,6 +33,9 @@ def main(new=0, filedir=None, data=None):
     df['accurate'] = df['class'] == trueclass
     print(df[df['accurate'] == True]['accurate'].count() / df[
         'accurate'].count())
+    end = time.time()
+    print('time taken:')
+    print(end - start)
     return str(df['class'].mode().values[0])
 
 
@@ -55,11 +60,11 @@ def makedat(data, act=None):
     """tracedata = {'xAmean':np.mean(xAccl), 'xAstd': np.std(xAccl), 'xAmax': np.max(xAccl), 'xAmin': np.min(xAccl),
                 'yAmean':np.mean(xAccl), 'yAstd': np.std(yAccl), 'yAmax': np.max(yAccl), 'yAmin': np.min(yAccl),
                 'zAmean':np.mean(zAccl), 'zAstd': np.std(zAccl), 'zAmax':np.max(zAccl), 'zAmin': np.min(zAccl),
-                'xRmean':np.mean(xRot), 'xRstd': np.std(xRot), 
-                'yRmean':np.mean(yRot), 'yRstd': np.std(yRot), 
+                'xRmean':np.mean(xRot), 'xRstd': np.std(xRot),
+                'yRmean':np.mean(yRot), 'yRstd': np.std(yRot),
                 'zRmean':np.mean(zRot), 'zRstd': np.std(zRot),
-                'xRVmean':np.mean(xRotVel), 'xRVstd': np.std(xRotVel), 
-                'yRVmean':np.mean(yRotVel), 'yRVstd': np.std(yRotVel), 
+                'xRVmean':np.mean(xRotVel), 'xRVstd': np.std(xRotVel),
+                'yRVmean':np.mean(yRotVel), 'yRVstd': np.std(yRotVel),
                 'zRVmean':np.mean(zRotVel), 'zRVstd': np.std(zRotVel)}"""
     tracedata = {'xAccl': xAccl, 'yAccl': yAccl, 'zAccl': zAccl, 'xRot': xRot,
                  'yRot': yRot, 'zRot': zRot, 'xRotVel': xRotVel,
@@ -87,11 +92,11 @@ def rforestfit(new, flstb):
         """dat = {'xAmean':[], 'xAstd': [], 'xAmax': [], 'xAmin': [],
                 'yAmean':[], 'yAstd': [], 'yAmax': [], 'yAmin': [],
                 'zAmean':[], 'zAstd': [], 'zAmax':[], 'zAmin': [],
-                'xRmean':[], 'xRstd': [], 
-                'yRmean':[], 'yRstd': [], 
+                'xRmean':[], 'xRstd': [],
+                'yRmean':[], 'yRstd': [],
                 'zRmean':[], 'zRstd': [],
-                'xRVmean':[], 'xRVstd': [], 
-                'yRVmean':[], 'yRVstd': [], 
+                'xRVmean':[], 'xRVstd': [],
+                'yRVmean':[], 'yRVstd': [],
                 'zRVmean':[], 'zRVstd': [], 'class': []}"""
         dat = {'xAccl': [], 'yAccl': [], 'zAccl': [], 'xRot': [], 'yRot': [],
                'zRot': [], 'xRotVel': [], 'yRotVel': [], 'zRotVel': [],
