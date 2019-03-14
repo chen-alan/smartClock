@@ -16,11 +16,11 @@ def main(new=0, filedir=None, data=None):
         d = request.form.to_dict()
         for i in d:
             print(i)
-    filedir = "dat-jjack5.json"
+    filedir = "dat-act1.json"
     print("filedir: ", filedir)
     # fitting new model/predicting using existing one
     flstb = re.search(r'dat-\w*\.json', filedir).group() if filedir else None
-    rfc = rforestfit(new, flstb)
+    rfc = rforestfit(1, flstb)
     if rfc[1] == True and filedir == None:
         print("Model ready")
         return
@@ -107,7 +107,7 @@ def rforestfit(new, flstb):
                'class': []}
         for file in re.findall(r'dat-[\w\d]*\.json',
                                ' '.join(os.listdir('data'))):
-            if flstb and file == flstb:
+            if flstb and flstb in file:
                 continue
             act = re.search(r'-[\w\d]*\.', file).group()[1:-1]
             with open('data/' + file, 'r') as f:
