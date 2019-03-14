@@ -12,16 +12,17 @@ app = Flask(__name__)
 def main(new=0, filedir=None, data=None):
     start = time.time()
     print("in main")
-    """with open('data/dat-act18.json','w') as f:
-        if request.method == 'POST':
-            d = request.form.to_dict()
-            for i in d:
-                f.write(i)"""
-    filedir = 'dat-act18.json'
+    data = ""
+    if request.method == 'POST':
+        d = request.form.to_dict()
+        for i in d:
+            data += i
+    data = json.loads(data)
+    #filedir = 'dat-act18.json'
     print("filedir: ", filedir)
     # fitting new model/predicting using existing one
     flstb = re.search(r'dat-\w*\.json', filedir).group() if filedir else None
-    rfc = rforestfit(1, flstb)
+    rfc = rforestfit(0, flstb)
     if rfc[1] == True and filedir == None:
         print("Model ready")
         return
@@ -31,13 +32,13 @@ def main(new=0, filedir=None, data=None):
             dat = json.loads(f.read())
         df = pd.DataFrame(makedat(dat, act))
     else:
-        df = pd.DataFrame(data)
-    trueclass = df['class']
-    df.drop(columns=['class'], inplace=True)
+        df = pd.DataFrame(makedat(data))
+    #trueclass = df['class']
+    #df.drop(columns=['class'], inplace=True)
     df['class'] = rfc[0].predict(df)
-    df['accurate'] = df['class'] == trueclass
-    print(df[df['accurate'] == True]['accurate'].count() / df[
-        'accurate'].count())
+    #df['accurate'] = df['class'] == trueclass
+    #print(df[df['accurate'] == True]['accurate'].count() / df[
+       # 'accurate'].count())
     end = time.time()
     print('time taken:')
     print(end - start)
