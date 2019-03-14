@@ -66,9 +66,6 @@ export default class Sensors extends React.Component {
                 const alm_min = alm_date.getUTCMinutes();
 
                 if ((cur_hrs === alm_hrs) && (cur_min === alm_min)) {
-                    // if (!this.state.collecting_data) {
-                    //     this._alarmCollect();
-                    // }
                     if (!this.state.alarm_offed && !this.state.alarm_ringing) {
                         console.log("alarm ringing");
                         this._alarmRing();
@@ -135,13 +132,12 @@ export default class Sensors extends React.Component {
     };
 
     _alarmDone = () => {
-        // 1) unrender "done" button
         this.setState({collecting_data: false});
         console.log("should start processing data");
         this._sendMotionData();
         console.log("assume jj done");
         this._alarmRingOff();
-        // 4) if backend return done: _alarmRingOff; else do nothing
+        this._alarmOff();
     };
 
 
