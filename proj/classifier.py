@@ -12,11 +12,12 @@ app = Flask(__name__)
 def main(new=0, filedir=None, data=None):
     start = time.time()
     print("in main")
-    if request.method == 'POST':
-        d = request.form.to_dict()
-        for i in d:
-            print(i)
-    filedir = "dat-act1.json"
+    with open('dat-act-11.json','w') as f:
+        if request.method == 'POST':
+            d = request.form.to_dict()
+            for i in d:
+                f.write(i)
+    exit(1)
     print("filedir: ", filedir)
     # fitting new model/predicting using existing one
     flstb = re.search(r'dat-\w*\.json', filedir).group() if filedir else None
@@ -107,7 +108,7 @@ def rforestfit(new, flstb):
                'class': []}
         for file in re.findall(r'dat-[\w\d]*\.json',
                                ' '.join(os.listdir('data'))):
-            if flstb and flstb in file:
+            if flstb and flstb == file:
                 continue
             act = re.search(r'-[\w\d]*\.', file).group()[1:-1]
             with open('data/' + file, 'r') as f:
