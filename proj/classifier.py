@@ -12,27 +12,40 @@ app = Flask(__name__)
 def main(new=0, filedir=None, data=None):
     start = time.time()
     print("in main")
+
+    #receiving data from mobile
     data = ""
     if request.method == 'POST':
         d = request.form.to_dict()
         for i in d:
             data += i
     data = json.loads(data)
+
+    #if filedir specified:
     #filedir = 'dat-act18.json'
     print("filedir: ", filedir)
     # fitting new model/predicting using existing one
     flstb = re.search(r'dat-\w*\.json', filedir).group() if filedir else None
+
+    #calling for model. switch to rforestfit(1, flstb) if want to train, filedir must be provided so flstb = None
     rfc = rforestfit(0, flstb)
+
+    #training mode: model fit, no prediction needed
     if rfc[1] == True and filedir == None:
         print("Model ready")
         return
+
+    #file of training data given
     if filedir != None:
         act = re.search(r'-\w*\.', filedir).group()[1:-1]
         with open('data/' + filedir, 'r+') as f:
             dat = json.loads(f.read())
         df = pd.DataFrame(makedat(dat, act))
+    #when data is received over network from mobile and not from file
     else:
         df = pd.DataFrame(makedat(data))
+
+    #prediction, and accuracy reading in training mode
     #trueclass = df['class']
     #df.drop(columns=['class'], inplace=True)
     df['class'] = rfc[0].predict(df)
@@ -42,9 +55,11 @@ def main(new=0, filedir=None, data=None):
     end = time.time()
     print('time taken:')
     print(end - start)
+
+    #returning mode (majority classification) of classifications for all datapoints given
     return str(df['class'].mode().values[0])
 
-
+#data formatting helper
 def makedat(data, act=None):
     print("in makedat")
     xAccl, yAccl, zAccl, xRot, yRot, zRot, xRotVel, yRotVel, zRotVel = ([] for
@@ -86,14 +101,16 @@ def makedat(data, act=None):
     #	tracedata[key] = [tracedata[key]]
     return tracedata
 
-
+#model creation and fitting
 def rforestfit(new, flstb):
     print("in rforestfit")
     newModel = True
+    #if new model not needed, load previously trained model from pickle file
     if new == 0 and 'moveclass.pkl' in os.listdir():
         rfc = joblib.load('moveclass.pkl')
         newModel = False
-    else:
+
+    else: #new model needed
         rfc = RandomForestClassifier()
         """dat = {'xAmean':[], 'xAstd': [], 'xAmax': [], 'xAmin': [],
                 'yAmean':[], 'yAstd': [], 'yAmax': [], 'yAmin': [],
@@ -107,6 +124,8 @@ def rforestfit(new, flstb):
         dat = {'xAccl': [], 'yAccl': [], 'zAccl': [], 'xRot': [], 'yRot': [],
                'zRot': [], 'xRotVel': [], 'yRotVel': [], 'zRotVel': [],
                'class': []}
+
+        #reading all training files, must be provided in directory "./data"
         for file in re.findall(r'dat-[\w\d]*\.json',
                                ' '.join(os.listdir('data'))):
             if flstb and flstb == file:
@@ -125,6 +144,7 @@ def rforestfit(new, flstb):
     return (rfc, newModel)
 
 
+#for command line running outside of flask
 if __name__ == "__main__":
     # parsing arguments
     parser = argparse.ArgumentParser()
